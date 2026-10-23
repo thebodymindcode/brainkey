@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://thebodymindcode.ru/brainkey/">
+<title>Мозг: рычаг, который управляет деньгами, здоровьем и судьбой</title>
+<meta name="description" content="Что на самом деле стоит за успехом, здоровьем, уверенностью и деньгами, и почему без этого знания ничего не работает">
+<meta property="og:title" content="Мозг: рычаг, который управляет деньгами, здоровьем и судьбой">
+<meta property="og:description" content="Что на самом деле стоит за успехом, здоровьем, уверенностью и деньгами, и почему без этого знания ничего не работает">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thebodymindcode.ru/brainkey/">
+<meta property="og:site_name" content="Архитектура сознания">
+<meta property="og:image" content="https://thebodymindcode.ru/brainkey/img/og-brainkey-hd.jpg">
+<meta property="og:image:width" content="2400"><meta property="og:image:height" content="1260">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F7F5EF">
+<link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>/* ЛИД-МАГНИТ «РЫЧАГ» 2.0 · досье нового уровня. Палитра и шрифты наследуют /peace/. */
+:root{
+ --paper:#F7F5EF; --paper2:#EFECE3; --paper3:#E5E1D5; --desk:#D9D4C6;
+ --ink:#141C29; --ink2:#2E3645; --mute:#6B685C; --mute2:#8C897C; --line:#D5D0C2;
+ --blue:#1A3A5C; --blue2:#2E6090; --sky:#7DC4FF; --sky2:#4DA6E8;
+ --red:#B0281C; --redA:rgba(176,40,28,.72); --navy:#0E1B2B; --navy2:#152840;
+ --serif:'Playfair Display',Georgia,'Times New Roman',serif;
+ --sans:'IBM Plex Sans',-apple-system,'Segoe UI',sans-serif;
+ --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+ --col:680px; --rail:232px; --gap:56px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--sans);font-size:18px;line-height:1.72;color:var(--ink2);background:var(--paper);overflow-x:clip;font-feature-settings:"kern","liga"}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9000;opacity:.05;
+ background:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+strong{font-weight:600;color:var(--ink)}
+p{margin:0 0 1.05em;text-wrap:pretty;hyphens:manual}
+::selection{background:rgba(46,96,144,.2)}
+
+/* ═══ ВЕРХНЯЯ ПОЛОСА: гриф, где я, сколько прочитано ═══ */
+.bar{position:sticky;top:0;z-index:500;background:rgba(247,245,239,.9);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.bar-in{display:flex;align-items:center;gap:16px;height:52px;padding:0 24px;max-width:1440px;margin:0 auto;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.bar-id{white-space:nowrap}
+.bar-lvl{color:var(--redA);border:1.5px solid rgba(176,40,28,.35);padding:2px 9px;font-weight:700;letter-spacing:.1em}
+.bar-now{flex:1;min-width:0;text-align:center;color:var(--ink);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:0;transition:opacity .4s}
+.bar.on .bar-now{opacity:1}
+.bar-toc{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 4px 0 14px;background:none;border:0;font:inherit;color:var(--blue2);cursor:pointer;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.bar-toc i{display:grid;gap:4px;width:18px}
+.bar-toc i b{height:1.5px;background:currentColor;display:block}
+.prog{position:absolute;left:0;bottom:-1px;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--blue2),var(--red))}
+
+/* ═══ ОГЛАВЛЕНИЕ-ВЫЕЗД ═══ */
+.drawer{position:fixed;inset:0;z-index:800;pointer-events:none;visibility:hidden;transition:visibility 0s .45s}
+.drawer::before{content:'';position:absolute;inset:0;background:rgba(14,27,43,.45);opacity:0;transition:opacity .35s}
+.drawer-p{position:absolute;top:0;right:0;bottom:0;width:min(420px,92vw);background:var(--paper);box-shadow:-20px 0 60px rgba(14,27,43,.25);transform:translateX(102%);transition:transform .45s cubic-bezier(.2,.8,.2,1);overflow:auto;padding:22px 26px 40px}
+.drawer.open{pointer-events:auto;visibility:visible;transition:none}.drawer.open::before{opacity:1}.drawer.open .drawer-p{transform:none}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);margin-bottom:18px}
+.drawer-x{width:44px;height:44px;border:1px solid var(--line);background:none;cursor:pointer;font-size:20px;color:var(--ink)}
+
+/* ═══ СПИСОК ФАКТОВ (оглавление) ═══ */
+.toc{list-style:none}
+.toc .tp{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute2);margin:20px 0 6px;padding-top:12px;border-top:1px solid var(--line)}
+.toc .tp:first-child{margin-top:0;border-top:0;padding-top:0}
+.toc a{display:grid;grid-template-columns:34px 1fr;gap:8px;align-items:baseline;text-decoration:none;padding:9px 0;color:var(--mute);transition:color .25s;min-height:44px}
+.toc a .n{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--mute2);letter-spacing:.06em;position:relative}
+.toc a .t{font-size:15px;line-height:1.4}
+.toc a:hover,.toc a.on{color:var(--ink)}
+.toc a.on .n{color:var(--red)}
+.toc a.on .n::before{content:'';position:absolute;left:-14px;top:50%;width:7px;height:7px;margin-top:-4px;border-radius:50%;background:var(--red)}
+.toc a.done .n{color:var(--blue2)}
+
+/* ═══ ПЕРВЫЙ ЭКРАН ═══ */
+.hero{position:relative;min-height:calc(100svh - 52px);display:grid;align-items:center;padding:56px 24px 72px;overflow:hidden;background:
+ radial-gradient(1200px 600px at 78% 30%,rgba(46,96,144,.10),transparent 60%),linear-gradient(180deg,var(--paper2),var(--paper))}
+.hero-in{max-width:1240px;margin:0 auto;width:100%;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:72px;align-items:center}
+.kick{font-family:var(--mono);font-size:12.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--blue2);display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.kick::before{content:'';width:44px;height:1px;background:var(--blue2)}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.2rem,4.5vw,4.1rem);line-height:1.03;letter-spacing:-.012em;color:var(--ink);text-wrap:balance;margin-bottom:28px}
+.hero h1 em{font-style:italic;color:var(--blue2)}
+.hero .sub{font-size:clamp(1.05rem,1.6vw,1.28rem);line-height:1.55;color:var(--ink2);max-width:560px;text-wrap:pretty;font-weight:500}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:40px;padding-top:22px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.hero-meta b{color:var(--ink);font-weight:700}
+.hero-go{display:inline-flex;align-items:center;gap:12px;margin-top:30px;min-height:48px;padding:0 26px;background:var(--ink);color:#fff;text-decoration:none;font-family:var(--mono);font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;transition:background .3s,transform .3s}
+.hero-go:hover{background:var(--blue);transform:translateY(-2px)}
+.hero-go svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;animation:nudge 1.8s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateY(4px)}}
+.folder{position:relative;margin:0 14px;transform:rotate(1.6deg);transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.folder:hover{transform:rotate(.4deg)}
+.folder-tab{position:absolute;top:-30px;left:26px;height:32px;padding:0 18px;display:flex;align-items:center;background:var(--paper3);border:1px solid var(--line);border-bottom:0;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.folder-body{background:#fff;padding:14px;border:1px solid var(--line);box-shadow:0 30px 70px -20px rgba(14,27,43,.35),0 2px 0 var(--paper3)}
+.folder-body img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(.55) contrast(1.08)}
+.folder-cap{display:flex;justify-content:space-between;gap:10px;padding:10px 2px 0;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.clip{position:absolute;top:-18px;right:48px;width:26px;height:64px;border:3px solid #9aa0a8;border-radius:13px;z-index:3}
+.clip::after{content:'';position:absolute;inset:6px 4px 14px;border:3px solid #9aa0a8;border-radius:9px;border-top-color:transparent}
+.stamp{position:absolute;z-index:4;font-family:var(--mono);font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--red);border:3px solid var(--red);padding:8px 18px;line-height:1.1;text-align:center;mix-blend-mode:multiply;opacity:0;transform:rotate(-12deg) scale(2.2)}
+.stamp small{display:block;font-size:max(12px,.62em);letter-spacing:.2em;font-weight:600}
+.stamp.hit{animation:slam .55s cubic-bezier(.2,1.4,.4,1) forwards}
+@keyframes slam{0%{opacity:0;transform:rotate(-12deg) scale(2.2)}60%{opacity:.95;transform:rotate(-9deg) scale(.94)}100%{opacity:.85;transform:rotate(-9deg) scale(1)}}
+.hero .stamp{left:-44px;bottom:-26px;font-size:17px;background:rgba(247,245,239,.92);mix-blend-mode:normal}
+
+/* закрашенные строки, которые снимаются при появлении */
+.rd{position:relative;display:inline;background:linear-gradient(var(--ink),var(--ink)) no-repeat 0 55%/100% 1.05em;color:transparent;transition:background-size .9s cubic-bezier(.7,0,.2,1),color .3s .6s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.rd.off{background-size:0% 1.05em;background-position:100% 55%;color:inherit}
+
+/* ═══ СЕТКА ДОСЬЕ: оглавление слева, текст по центру, поля справа ═══ */
+.doc{display:grid;grid-template-columns:minmax(0,var(--col));justify-content:center;padding:0 24px}
+.rail{display:none}
+.col{position:relative;min-width:0}
+@media(min-width:1200px){
+ .doc{grid-template-columns:var(--rail) minmax(0,var(--col)) var(--rail);gap:var(--gap)}
+ .rail{display:block;position:relative}
+ .rail-in{position:sticky;top:84px;max-height:calc(100vh - 110px);overflow:auto;padding:28px 0 20px 14px;scrollbar-width:none}
+ .rail-h{font-family:var(--mono);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute2);margin-bottom:16px}
+ .bar-toc{display:none}
+}
+.sec{padding-top:8px}
+
+/* поля: сноски и источники уходят вправо на широком экране */
+.note{font-family:var(--mono);font-size:12.5px;line-height:1.6;color:var(--mute);letter-spacing:.01em;border-top:1px solid var(--line);padding-top:10px;margin:6px 0 26px}
+.note::before{content:'Источник';display:block;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--blue2);font-weight:700;margin-bottom:6px}
+@media(min-width:1200px){.note{position:absolute;left:calc(100% + var(--gap));width:var(--rail);margin:0;transform:translateY(-6px)}}
+
+/* ═══ ТЕКСТ ═══ */
+.lede{font-size:1.2em;line-height:1.6;color:var(--ink)}
+.drop::first-letter{float:left;font-family:var(--serif);font-weight:500;font-size:3.5em;line-height:.8;padding:.06em .1em 0 0;color:var(--blue)}
+.big{font-family:var(--serif);font-size:clamp(1.45rem,3vw,1.95rem);line-height:1.3;color:var(--ink);font-weight:500;text-wrap:balance;margin:1.2em 0 1em}
+.big em{color:var(--blue2)}
+.say{font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,2.6vw,1.65rem);line-height:1.35;color:var(--blue);margin:1.4em 0 1em;text-wrap:balance}
+.gword{font-family:var(--serif);font-weight:500;font-size:clamp(3.8rem,13vw,8.5rem);line-height:.95;letter-spacing:-.02em;color:var(--ink);margin:.3em 0 .25em}
+.gword.q{font-style:italic;color:var(--blue2)}
+.hr{height:1px;background:var(--line);margin:48px 0;position:relative}
+.hr::after{content:'';position:absolute;left:50%;top:-4px;width:8px;height:8px;margin-left:-4px;border:1.5px solid var(--blue2);border-radius:50%;background:var(--paper)}
+
+/* реестр «Это он решает» */
+.reg{margin:34px 0 30px;border-top:2px solid var(--ink)}
+.reg-r{display:grid;grid-template-columns:58px minmax(0,1fr);gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+.reg-i{width:58px;height:58px;display:grid;place-items:center;background:var(--paper2);border:1px solid var(--line)}
+.reg-i svg{width:28px;height:28px;stroke:var(--blue2);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.reg-r p{margin:0}
+.reg-r p .k{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue2);margin-bottom:4px;font-weight:700}
+
+/* кукловод */
+.puppet{display:grid;grid-template-columns:120px minmax(0,1fr);gap:26px;align-items:center;margin:40px 0;padding:28px 30px;background:var(--navy);color:#D6E2EE;position:relative;overflow:hidden}
+.puppet p{margin:0;font-family:var(--serif);font-size:clamp(1.15rem,2.2vw,1.38rem);line-height:1.5;color:#E8EFF6}
+.puppet svg{width:120px;height:150px;overflow:visible}
+.puppet .str{stroke:rgba(125,196,255,.55);stroke-width:1}
+.puppet .fig{stroke:#7DC4FF;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.puppet .bar2{stroke:#E8EFF6;stroke-width:3;stroke-linecap:round}
+.pz{transform-origin:60px 10px;animation:sway 4.2s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+
+/* меморандум с грифом */
+.memo{position:relative;margin:44px 0;padding:34px 34px 30px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 50px -24px rgba(14,27,43,.3)}
+.memo::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 31px,rgba(46,96,144,.06) 31px 32px);pointer-events:none}
+.memo-h{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);padding-bottom:14px;margin-bottom:18px;border-bottom:1px dashed var(--line)}
+.memo-h b{color:var(--redA)}
+.memo p{position:relative;font-size:1.06em;color:var(--ink)}
+.memo .stamp{right:22px;top:-22px;font-size:13px}
+
+.stac{margin:6px 0 28px;border-left:3px solid var(--red);padding-left:22px}
+.stac p{font-family:var(--serif);font-size:clamp(1.3rem,2.6vw,1.7rem);line-height:1.3;color:var(--ink);margin:0 0 .35em}
+
+/* карта семи фактов */
+.map{margin:40px 0 34px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.map a{display:grid;grid-template-columns:auto 1fr;gap:14px;text-decoration:none;padding:16px 18px;background:var(--paper2);border:1px solid var(--line);border-top:3px solid var(--blue2);transition:transform .3s,box-shadow .3s,border-color .3s;min-height:44px}
+.map a:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(14,27,43,.4);border-top-color:var(--red)}
+.map .n{font-family:var(--serif);font-size:2.1rem;line-height:1;color:var(--blue2);font-weight:500}
+.map .t{font-size:14.5px;line-height:1.42;color:var(--ink)}
+.map a:last-child{grid-column:1/-1;border-top-color:var(--red);background:var(--paper3)}
+
+/* ═══ РАЗВОРОТ ЧАСТИ ═══ */
+.part{position:relative;margin:90px calc(50% - 50vw) 64px;padding:clamp(64px,10vw,120px) 24px;background:var(--navy);color:#C9D7E6;overflow:hidden;isolation:isolate}
+.part::before{content:'';position:absolute;inset:0;z-index:-1;opacity:.5;background:radial-gradient(800px 400px at 85% 20%,rgba(77,166,232,.18),transparent 60%),repeating-linear-gradient(90deg,transparent 0 79px,rgba(255,255,255,.035) 79px 80px)}
+.part-in{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:end}
+.part-num{font-family:var(--serif);font-size:clamp(6rem,17vw,13rem);line-height:.8;color:transparent;-webkit-text-stroke:1.5px rgba(125,196,255,.55);font-weight:500}
+.part-k{font-family:var(--mono);font-size:12.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--sky);margin-bottom:12px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.part-k b{color:#ff8a7a;border:1.5px solid rgba(255,138,122,.45);padding:1px 9px;letter-spacing:.14em}
+.part h2{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,4.6vw,3.6rem);line-height:1.06;color:#fff;text-wrap:balance}
+.part-list{list-style:none;margin-top:28px;display:flex;flex-wrap:wrap;gap:10px}
+.part-list a{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:8px 16px;border:1px solid rgba(125,196,255,.28);color:#D6E2EE;text-decoration:none;font-size:14px;line-height:1.35;transition:background .3s,border-color .3s}
+.part-list a:hover{background:rgba(125,196,255,.1);border-color:var(--sky)}
+.part-list a span{font-family:var(--mono);font-size:12px;color:var(--sky);font-weight:700}
+
+/* ═══ ШАПКА ФАКТА ═══ */
+.fh{position:relative;margin:24px 0 30px;padding-top:26px}
+.fh-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-family:var(--mono);font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
+.fh-top .num{background:var(--ink);color:#fff;padding:5px 12px;font-weight:700;letter-spacing:.12em}
+.fh-top .st{color:var(--redA);border:1.5px solid rgba(176,40,28,.4);padding:3px 10px;font-weight:700;transform:rotate(-2deg)}
+.fh-top .of{color:var(--mute2);margin-left:auto}
+.fh-n{position:absolute;right:-8px;top:-30px;font-family:var(--serif);font-size:clamp(7rem,16vw,11rem);line-height:1;color:transparent;-webkit-text-stroke:1.2px rgba(46,96,144,.22);font-weight:500;pointer-events:none;z-index:-1;user-select:none}
+.fh h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.75rem,3.7vw,2.7rem);line-height:1.1;color:var(--ink);letter-spacing:-.005em;text-wrap:balance}
+.fh h3{font-family:var(--serif);font-weight:500;font-style:italic;font-size:clamp(1.3rem,2.4vw,1.6rem);color:var(--blue2);margin-top:16px;line-height:1.3}
+
+/* ═══ ИЛЛЮСТРАЦИЯ-ВЕЩДОК ═══ */
+.ev{margin:44px calc(50% - min(560px,50vw - 12px));position:relative}
+.ev-f{position:relative;overflow:hidden;background:#111}
+.ev-f img{width:100%;aspect-ratio:16/9;object-fit:cover;filter:grayscale(.35) contrast(1.06);transform:scale(1.06);transition:transform 1.6s cubic-bezier(.2,.8,.2,1),filter 1.2s}
+.ev.in .ev-f img{transform:scale(1)}
+.ev-f::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.08) 0 1px,transparent 1px 3px);mix-blend-mode:multiply;pointer-events:none}
+.ev-f .scan{position:absolute;left:0;right:0;top:0;height:100%;background:var(--paper);transform-origin:50% 100%;transition:transform 1.1s cubic-bezier(.7,0,.2,1);z-index:2}
+.ev.in .ev-f .scan{transform:scaleY(0)}
+.ev-f .scan::after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--sky2);box-shadow:0 0 18px 4px rgba(77,166,232,.7)}
+.corner{position:absolute;width:22px;height:22px;border:2px solid rgba(255,255,255,.85);z-index:3}
+.corner.a{top:14px;left:14px;border-right:0;border-bottom:0}.corner.b{top:14px;right:14px;border-left:0;border-bottom:0}
+.corner.c{bottom:14px;left:14px;border-right:0;border-top:0}.corner.d{bottom:14px;right:14px;border-left:0;border-top:0}
+.ev-c{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 2px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.ev-c .tag{color:var(--redA);border:1px solid rgba(176,40,28,.35);padding:2px 9px;font-weight:700}
+
+/* ═══ ЦИТАТА ═══ */
+.pull{margin:44px 0;padding:34px 0 30px;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);text-align:center}
+.pull q{display:block;font-family:var(--serif);font-style:italic;font-size:clamp(1.6rem,3.6vw,2.4rem);line-height:1.22;color:var(--ink);quotes:none;text-wrap:balance}
+.pull cite{display:block;margin-top:14px;font-family:var(--mono);font-style:normal;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+
+/* ═══ ЦИФРЫ ═══ */
+.dial{display:grid;grid-template-columns:200px minmax(0,1fr);gap:30px;align-items:center;margin:40px 0;padding:30px;background:var(--paper2);border:1px solid var(--line);border-left:4px solid var(--blue2)}
+.dial svg{width:200px;height:200px;transform:rotate(-90deg)}
+.dial .tr{stroke:var(--paper3);fill:none;stroke-width:14}
+.dial .fl{stroke:url(#gd);fill:none;stroke-width:14;stroke-linecap:butt;stroke-dasharray:0 999;transition:stroke-dasharray 2.2s cubic-bezier(.3,.7,.2,1)}
+.dial-w{position:relative}
+.dial-v{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-size:2.6rem;color:var(--ink);font-weight:500}
+.dial p{margin:0;font-family:var(--serif);font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.32;color:var(--ink);text-wrap:balance}
+
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:36px 0}
+.stat{background:var(--paper);padding:26px 16px 22px;text-align:center}
+.stat-n{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.4rem);line-height:1;color:var(--blue);font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
+.stat-l{margin-top:10px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);line-height:1.5}
+
+/* ═══ ТЁМНАЯ ПАНЕЛЬ: мозг DMN ═══ */
+.panel{margin:44px calc(50% - min(560px,50vw - 12px));background:linear-gradient(135deg,var(--navy),var(--navy2));color:#C9D7E6;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:0;overflow:hidden;position:relative}
+.panel-v{position:relative;min-height:360px;display:grid;place-items:center;padding:24px;background:radial-gradient(closest-side,rgba(77,166,232,.14),transparent)}
+.panel-v canvas{width:100%;max-width:520px;aspect-ratio:600/460;height:auto}
+.panel-t{padding:40px 38px;display:flex;flex-direction:column;justify-content:center}
+.panel-k{font-family:var(--mono);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--sky);margin-bottom:18px}
+.panel-t p{color:#DCE6F0;font-size:1.02em;line-height:1.65}
+.panel-t p:last-child{margin:0}
+.legend{display:flex;gap:18px;flex-wrap:wrap;position:absolute;left:22px;bottom:18px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(201,215,230,.7)}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:middle}
+
+/* «Вот откуда» */
+.whence{margin:34px 0;counter-reset:w}
+.whence p{position:relative;padding:14px 0 14px 54px;border-top:1px solid var(--line);margin:0}
+.whence p:last-child{border-bottom:1px solid var(--line)}
+.whence p::before{counter-increment:w;content:counter(w,decimal-leading-zero);position:absolute;left:0;top:16px;font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--red);letter-spacing:.06em}
+
+/* цепочка тревоги */
+.chain{margin:26px 0 30px;padding:18px 22px;background:var(--paper2);border-left:3px solid var(--red);font-size:1.02em;color:var(--ink)}
+.chain .c{display:inline;transition:color .3s,background .3s;padding:0 2px}
+.chain .c.hot{color:#fff;background:var(--red)}
+
+/* что делает с телом */
+.harm{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:34px 0}
+.harm-c{background:#fff;border:1px solid var(--line);padding:22px 22px 20px;position:relative}
+.harm-c:first-child{grid-column:1/-1;background:var(--navy);border-color:var(--navy);color:#DCE6F0}
+.harm-c:first-child h4{color:#fff}.harm-c:first-child svg{stroke:#ff8a7a}
+.harm-c svg{width:30px;height:30px;stroke:var(--red);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
+.harm-c h4{font-family:var(--serif);font-weight:500;font-size:1.28rem;line-height:1.25;color:var(--ink);margin-bottom:8px}
+.harm-c p{margin:0;font-size:.95em;line-height:1.6}
+
+/* теломеры */
+.telo{margin:36px 0 10px;padding:28px 24px 18px;background:#fff;border:1px solid var(--line)}
+.telo-h{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin-bottom:14px}
+.telo svg{width:100%;height:auto;display:block}
+.telo .cap{transition:width 2.4s cubic-bezier(.3,.7,.2,1),x 2.4s cubic-bezier(.3,.7,.2,1)}
+
+/* хронология рассекречивания */
+.tl{position:relative;margin:36px 0;padding-left:36px}
+.tl::before{content:'';position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--blue2),var(--red))}
+.tl-i{position:relative;padding:0 0 26px}
+.tl-i::before{content:'';position:absolute;left:-33px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:2px solid var(--blue2)}
+.tl-i.in::before{background:var(--blue2);box-shadow:0 0 0 6px rgba(46,96,144,.12)}
+.tl-y{display:inline-block;font-family:var(--mono);font-size:12.5px;font-weight:700;letter-spacing:.12em;color:#fff;background:var(--blue);padding:3px 10px;margin-bottom:10px}
+.tl-i p{margin:0}
+
+/* сердце и мозг */
+.hb{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin:36px 0}
+.hb-c{background:var(--navy);color:#C9D7E6;padding:22px;position:relative;overflow:hidden}
+.hb-c svg{width:100%;height:auto;display:block}
+.hb-k{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--sky);margin-top:12px;line-height:1.5}
+.deck{transition:transform .5s,fill .5s}
+
+/* украденные годы */
+.lives{display:grid;gap:14px;margin:30px 0}
+.life{display:grid;grid-template-columns:64px minmax(0,1fr);gap:18px;padding:20px 22px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--mute2);align-items:start}
+.life svg{width:64px;height:64px;stroke:var(--ink2);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.life p{margin:0}
+
+/* бак */
+.tank{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:30px 0 34px}
+.tank-c{text-align:center}
+.tank-b{height:150px;border:2px solid var(--ink);border-radius:6px;position:relative;overflow:hidden;background:#fff;margin:0 auto 10px;max-width:92px}
+.tank-b i{position:absolute;left:0;right:0;bottom:0;height:100%;background:linear-gradient(0deg,var(--blue),var(--sky2));transition:height 2s cubic-bezier(.3,.7,.2,1) var(--d,0s)}
+.tank-b i.neg{background:linear-gradient(0deg,var(--red),#e0604f)}
+.tank-b::before{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:8px;border:2px solid var(--ink);border-bottom:0;border-radius:4px 4px 0 0}
+.tank-l{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+
+/* досье учёного */
+.card{margin:36px 0;padding:28px 30px;background:var(--paper2);border:1px solid var(--line);position:relative}
+.card-h{display:flex;gap:16px;align-items:center;margin-bottom:18px;padding-bottom:16px;border-bottom:1px dashed var(--line)}
+.card-h .av{width:56px;height:56px;flex:none;border-radius:50%;background:var(--navy);display:grid;place-items:center}
+.card-h .av svg{width:30px;height:30px;stroke:var(--sky);fill:none;stroke-width:1.5}
+.card-h b{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--blue2)}
+.card p:last-child{margin:0}
+
+.dawn{margin:34px 0;padding:30px;background:linear-gradient(135deg,#FFF9EC,#F3EEDF);border:1px solid #E6DCC2;border-radius:2px;position:relative}
+.dawn p{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.38rem);line-height:1.5;color:var(--ink)}
+.dawn p:last-child{margin:0}
+
+/* рубильник */
+.sw{margin:30px 0 20px;list-style:none;border-top:2px solid var(--ink)}
+.sw li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:14px;padding:12px 0;border-bottom:1px solid var(--line);align-items:start;color:var(--ink2);transition:color .4s}
+.sw li i{width:20px;height:20px;border:2px solid var(--mute2);margin-top:4px;position:relative;transition:border-color .4s,background .4s}
+.sw li.on i{border-color:var(--red);background:var(--red)}
+.sw li.on i::after{content:'';position:absolute;left:5px;top:1px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.lever{display:grid;grid-template-columns:auto minmax(0,1fr);gap:26px;align-items:center;margin:26px 0 40px;padding:28px 30px;background:var(--navy);color:#fff}
+.lever p{margin:0;font-family:var(--serif);font-size:clamp(1.5rem,3.2vw,2.2rem);line-height:1.2;color:#fff;text-wrap:balance}
+.tog{width:92px;height:48px;border-radius:24px;background:#3a4658;position:relative;transition:background .6s;flex:none}
+.tog::after{content:'';position:absolute;top:5px;left:5px;width:38px;height:38px;border-radius:50%;background:#fff;transition:transform .6s cubic-bezier(.3,1.4,.4,1);box-shadow:0 4px 10px rgba(0,0,0,.3)}
+.lever.in .tog{background:var(--sky2)}
+.lever.in .tog::after{transform:translateX(44px)}
+
+/* восемь недель */
+.weeks{margin:36px 0 12px;background:#fff;border:1px solid var(--line);padding:26px 26px 22px}
+.weeks-h{font-family:var(--serif);font-size:clamp(1.3rem,2.6vw,1.7rem);line-height:1.25;color:var(--ink);margin-bottom:20px;text-wrap:balance}
+.wk{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);gap:16px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.wk span{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);font-weight:600}
+.wk-b{height:12px;background:var(--paper2);position:relative;overflow:hidden}
+.wk-b i{position:absolute;left:0;top:0;bottom:0;width:var(--f);background:var(--c,var(--blue2));transition:width 2s cubic-bezier(.3,.7,.2,1)}
+.weeks:not(.in) .wk-b i{width:var(--s)}
+.wk-scale{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--mute2);margin-top:10px;padding-left:206px}
+
+/* на языке жизни */
+.lang{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:30px 0 36px}
+.lang-c{background:var(--paper);padding:24px 22px;transition:background .3s}
+.lang-c:hover{background:#fff}
+.lang-c svg{width:30px;height:30px;stroke:var(--blue2);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
+.lang-c h4{font-family:var(--serif);font-weight:500;font-size:1.35rem;color:var(--ink);margin-bottom:6px}
+.lang-c p{margin:0;font-size:.95em;line-height:1.6}
+
+/* ═══ САМОДИАГНОСТИКА ═══ */
+.test{margin:40px 0;background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue2);box-shadow:0 24px 60px -34px rgba(14,27,43,.45)}
+.test-h{padding:26px 28px 8px}
+.test-h p{margin:0;font-size:1.02em;color:var(--ink)}
+.test-l{list-style:none;padding:8px 16px 8px}
+.test-l label{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding:12px 12px;cursor:pointer;border-radius:2px;transition:background .25s;min-height:44px}
+.test-l label:hover{background:var(--paper2)}
+.test-l input{appearance:none;-webkit-appearance:none;width:24px;height:24px;border:2px solid var(--mute2);margin-top:2px;cursor:pointer;display:grid;place-items:center;transition:all .25s;background:#fff}
+.test-l input:checked{background:var(--blue2);border-color:var(--blue2)}
+.test-l input:checked::after{content:'';width:6px;height:12px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.test-l input:focus-visible{outline:2px solid var(--sky2);outline-offset:2px}
+.test-m{padding:18px 28px 26px;background:var(--paper2);border-top:1px solid var(--line)}
+.meter{display:grid;grid-template-columns:repeat(9,1fr);gap:4px;margin-bottom:16px}
+.meter i{height:8px;background:var(--paper3);transition:background .35s}
+.meter i.on{background:var(--blue2)}.meter i.on.w{background:#D98A2B}.meter i.on.r{background:var(--red)}
+.meter-n{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:12px}
+.meter-n b{color:var(--ink);font-size:1.25em}
+.res p{margin:0 0 8px;padding:10px 14px;border-left:3px solid var(--line);color:var(--mute2);transition:all .35s;font-size:.96em}
+.res p.on{border-left-color:var(--blue2);background:#fff;color:var(--ink)}
+.res p.on.r{border-left-color:var(--red)}
+
+/* ═══ ПРОДУКТ ═══ */
+.prod{margin:56px calc(50% - min(560px,50vw - 12px)) 40px;background:var(--navy);color:#C9D7E6;position:relative;overflow:hidden}
+.prod-img{position:relative}
+.prod-img img{width:100%;aspect-ratio:21/9;object-fit:cover;opacity:.85}
+.prod-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,var(--navy))}
+.prod-in{padding:0 clamp(22px,5vw,64px) 48px;margin-top:-70px;position:relative;z-index:1}
+.prod h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.9rem,4vw,2.8rem);color:#fff;line-height:1.1;margin-bottom:22px}
+.prod p{color:#DCE6F0}
+.prod-g{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;margin-top:28px}
+.prod-l{list-style:none;border-top:1px solid rgba(125,196,255,.25)}
+.prod-l li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;padding:12px 0;border-bottom:1px solid rgba(125,196,255,.14);color:#E8EFF6;line-height:1.5}
+.prod-l li::before{content:'';width:10px;height:10px;margin-top:8px;border:1.5px solid var(--sky);transform:rotate(45deg)}
+.prod-sub{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--sky);margin-bottom:12px}
+.proof{padding:18px 20px;border:1px solid rgba(125,196,255,.25);margin-top:18px}
+.proof p{margin:0;font-size:.98em}
+.proof p+p{margin-top:10px;font-family:var(--serif);font-style:italic;font-size:1.15em;color:#fff}
+
+.reviews{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:0 calc(50% - min(560px,50vw - 12px)) 36px}
+.rev{background:#fff;border:1px solid var(--line);padding:26px 22px 20px;position:relative;display:flex;flex-direction:column}
+.rev::before{content:'«';position:absolute;top:2px;right:16px;font-family:var(--serif);font-size:4.2rem;line-height:1;color:rgba(46,96,144,.14)}
+.rev q{quotes:none;display:block;font-size:.98em;line-height:1.62;color:var(--ink);margin-bottom:16px;flex:1}
+.rev .who{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);border-top:1px solid var(--line);padding-top:12px;line-height:1.5}
+
+.cta{display:flex;flex-direction:column;align-items:center;gap:12px;margin:34px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:60px;padding:0 42px;background:linear-gradient(135deg,var(--blue2),var(--sky2));color:#fff;text-decoration:none;font-weight:600;font-size:1.06rem;letter-spacing:.02em;box-shadow:0 10px 30px -10px rgba(46,96,144,.6);transition:transform .3s,box-shadow .3s;text-align:center}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(46,96,144,.7)}
+.btn.big{min-height:68px;padding:0 54px;font-size:1.15rem;animation:glow 2.8s ease-in-out infinite}
+@keyframes glow{50%{box-shadow:0 14px 44px -8px rgba(77,166,232,.8)}}
+.btn svg{width:18px;height:18px;transition:transform .3s}.btn:hover svg{transform:translateX(4px)}
+.cta small{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.prod .cta small{color:rgba(201,215,230,.6)}
+
+.fin{margin:40px 0 10px;padding:34px 0 30px;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);text-align:center}
+.fin p{font-family:var(--serif);font-size:clamp(1.15rem,2.2vw,1.4rem);line-height:1.5;color:var(--ink2);max-width:600px;margin:0 auto 16px;text-wrap:balance}
+.fin p:last-child{margin:0 auto;font-style:italic;color:var(--ink);font-size:clamp(1.3rem,2.6vw,1.7rem)}
+
+.site-foot{padding:30px 44px;background:#EDEAE0;margin-top:70px}
+
+/* ═══ ПОЯВЛЕНИЕ ═══ */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+ .rv{opacity:1;transform:none;transition:none}
+ .rd{background-size:0 0;color:inherit}
+ .stamp{opacity:.85;transform:rotate(-9deg);animation:none}
+ .ev-f .scan{display:none}
+ .pz,.hero-go svg,.btn.big{animation:none}
+ html{scroll-behavior:auto}
+}
+
+/* ═══ ТЕЛЕФОН И ПЛАНШЕТ ═══ */
+@media(max-width:1199px){
+ .bar-now{text-align:left}
+}
+@media(max-width:900px){
+ .hero{min-height:auto;padding:40px 20px 56px}
+ .hero-in{grid-template-columns:minmax(0,1fr);gap:56px}
+ .folder{max-width:460px;margin:0 auto;width:100%}
+ .panel{grid-template-columns:minmax(0,1fr)}
+ .panel-v{min-height:0;padding:22px 16px 56px}
+ .prod-g{grid-template-columns:minmax(0,1fr);gap:26px}
+ .reviews{grid-template-columns:minmax(0,1fr);margin-left:0;margin-right:0}
+}
+@media(max-width:680px){
+ body{font-size:17px;line-height:1.7}
+ .bar-in{padding:0 12px 0 16px;gap:10px;height:50px}
+ .bar-id,.bar-lvl{display:none}
+ .bar-now{font-size:12px;letter-spacing:.08em}
+ .doc{padding:0 18px}
+ .hero{padding:32px 18px 48px}
+ .kick{letter-spacing:.2em;gap:10px;margin-bottom:20px}
+ .kick::before{width:24px}
+ .hero h1{margin-bottom:20px}
+ .hero .stamp{left:-8px;bottom:40px;font-size:14px}
+ .clip{right:30px}
+ .hero-meta{gap:8px 18px;margin-top:28px}
+ .drop::first-letter{float:none;font-size:inherit;line-height:inherit;padding:0;color:inherit;font-family:inherit;font-weight:inherit}
+ .reg-r{grid-template-columns:44px minmax(0,1fr);gap:14px;padding:16px 0}
+ .reg-i{width:44px;height:44px}.reg-i svg{width:22px;height:22px}
+ .puppet{grid-template-columns:minmax(0,1fr);gap:14px;padding:24px 20px;margin:32px -18px}
+ .puppet svg{width:90px;height:112px;margin:0 auto}
+ .memo{padding:28px 20px 22px;margin:36px 0}
+ .memo .stamp{right:10px;top:-18px;font-size:12px}
+ .map{grid-template-columns:minmax(0,1fr);gap:8px}
+ .map a{padding:14px 16px}
+ .part{margin-top:64px;margin-bottom:44px;padding:56px 18px}
+ .part-in{grid-template-columns:minmax(0,1fr);gap:8px}
+ .part-num{font-size:6.5rem}
+ .part-list{gap:8px}
+ .fh-n{top:-16px;right:-4px}
+ .fh-top .of{margin-left:0}
+ .ev{margin:34px -18px}
+ .corner{width:16px;height:16px}
+ .ev-c{padding:10px 18px}
+ .dial{grid-template-columns:minmax(0,1fr);justify-items:center;text-align:center;padding:24px 18px}
+ .dial svg{width:170px;height:170px}
+ .stats{grid-template-columns:minmax(0,1fr)}
+ .stat{padding:20px 12px}
+ .panel{margin:34px -18px}
+ .panel-t{padding:28px 20px 30px}
+ .whence p{padding-left:44px}
+ .harm{grid-template-columns:minmax(0,1fr);gap:10px}
+ .harm-c{padding:20px 18px}
+ .telo{padding:22px 16px 14px}
+ .tl{padding-left:30px}
+ .tl-i::before{left:-27px}
+ .hb{grid-template-columns:minmax(0,1fr)}
+ .life{grid-template-columns:minmax(0,1fr);gap:10px;padding:18px}
+ .life svg{width:44px;height:44px}
+ .tank-b{height:120px}
+ .card{padding:22px 18px}
+ .dawn{padding:24px 20px}
+ .lever{grid-template-columns:minmax(0,1fr);gap:18px;padding:24px 20px;margin-left:-18px;margin-right:-18px}
+ .weeks{padding:20px 16px}
+ .wk{grid-template-columns:minmax(0,1fr);gap:6px}
+ .wk-scale{padding-left:0}
+ .lang{grid-template-columns:minmax(0,1fr)}
+ .lang-c{padding:20px 18px}
+ .test-h{padding:22px 18px 6px}
+ .test-l{padding:6px 4px}
+ .test-l label{padding:11px 12px}
+ .test-m{padding:16px 18px 22px}
+ .prod{margin:44px -18px 32px}
+ .prod-img img{aspect-ratio:16/10}
+ .prod-in{padding:0 20px 36px;margin-top:-40px}
+ .btn{width:100%;padding:0 22px;min-height:58px;font-size:1rem}
+ .btn.big{padding:0 22px;min-height:62px;font-size:1.04rem}
+ .site-foot{padding:22px 18px}
+}
+@media(max-width:360px){
+ .doc{padding:0 16px}
+ .hero h1{font-size:2.05rem}
+ .gword{font-size:3.3rem}
+ .stat-n{font-size:2.2rem}
+ .puppet,.panel,.ev,.prod,.lever{margin-left:-16px;margin-right:-16px}
+}
+
+/* ═══ ПРАВКИ ПРИЁМКИ 1 (верстальщик, 27.09) ═══ */
+.nw{white-space:nowrap}
+.btn{font-family:var(--sans)}
+.hero .sub,.lede{text-wrap:balance}
+.map .t,.toc a .t,.harm-c h4,.lang-c h4,.stat-l,.telo-h,.cta small,.part h2{text-wrap:balance}
+li,label,q,small{text-wrap:pretty}
+.toc a{grid-template-columns:30px 1fr}.toc a .t{font-size:14px}
+@media(min-width:1200px){
+ .ev,.panel,.prod,.reviews{margin-left:0;margin-right:calc(-1*(var(--gap) + var(--rail)))}
+ .note{z-index:2;background:var(--paper)}
+}
+@media(min-width:1440px){:root{--rail:256px}}
+.part-in{grid-template-columns:clamp(120px,16vw,260px) minmax(0,1fr)}
+.part-num{text-align:right}
+.part-list a{align-items:baseline;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#fff;font-weight:700}
+.part-list a span{font-weight:400;color:var(--sky)}
+.fh h2{font-size:clamp(1.75rem,3.2vw,2.3rem)}
+.fh h3 strong{color:var(--red);font-weight:600}
+.fh-n{top:-24px}
+.big.long{font-size:clamp(1.12rem,1.9vw,1.36rem);line-height:1.5;border-left:3px solid var(--blue2);padding-left:22px;font-weight:400}
+.memo p{line-height:32px}
+.memo::before{background-position:0 5px}
+.stat-n{word-spacing:-.18em}
+.panel-t{padding:40px 38px}
+.tank{max-width:460px;margin-left:auto;margin-right:auto}
+.tank-b i.neg{background:repeating-linear-gradient(135deg,#e0604f 0 6px,#f3c2bb 6px 12px);opacity:1!important}
+.rev{padding-top:54px}
+.rev::before{top:4px;left:20px;right:auto}
+.fin p:first-child{text-align:left;max-width:var(--col)}
+.prod-g>div:last-child{display:flex;flex-direction:column;justify-content:center}
+.telo-l{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin:14px 0 6px}
+.telo-l:first-of-type{margin-top:0}
+.chap{display:flex;align-items:center;gap:14px;margin:52px 0 14px;font-family:var(--mono);font-size:12.5px;font-weight:700;letter-spacing:.2em;color:var(--red)}
+.chap::after{content:'';flex:1;height:1px;background:var(--line)}
+@media(min-width:681px) and (max-width:900px){.hero h1{font-size:clamp(2.6rem,6.4vw,3.4rem)}}
+@media(max-width:680px){
+ .fh h2{font-size:clamp(1.5rem,6.9vw,1.75rem)}
+ .fh-n{font-size:6rem;top:-10px}
+ .stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .stat{padding:16px 6px}
+ .stat-n{font-size:2rem}
+ .stat-l{font-size:12px;letter-spacing:.02em}
+ .harm-c{display:grid;grid-template-columns:30px minmax(0,1fr);column-gap:12px}
+ .harm-c svg{margin:2px 0 0;width:26px;height:26px}
+ .harm-c h4,.harm-c p{grid-column:2}
+ .lang-c{display:grid;grid-template-columns:30px minmax(0,1fr);column-gap:12px}
+ .lang-c svg{margin:2px 0 0;width:26px;height:26px}
+ .lang-c h4,.lang-c p{grid-column:2}
+ .big.long{font-size:1.14rem;line-height:1.5;padding-left:16px}
+ .hb{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .hb-c{padding:12px}
+ .hb-k{font-size:12px;letter-spacing:.06em}
+}
+@media(max-width:360px){.fh h2{font-size:1.42rem}.stat-n{font-size:1.7rem}}
+@media(max-width:680px){
+ .part-in{grid-template-columns:minmax(0,1fr)}
+ .part-num{text-align:left}
+ .stat-l{font-family:var(--sans);text-transform:none;font-size:12.5px;letter-spacing:0;line-height:1.35}
+}
+@media(max-width:400px){.hero h1{font-size:2rem}.stat-n{font-size:1.7rem}}
+@media(max-width:340px){.hero h1{font-size:1.8rem}.stat-n{font-size:1.5rem}}
+@media(max-width:340px){.stat{padding:14px 3px}.stat-l{font-size:12px}}
+/* ═══ ПРАВКИ ПРИЁМКИ 2 ═══ */
+.prod-l li{display:block;position:relative;padding-left:38px}
+.prod-l li::before{position:absolute;left:0;top:8px;margin:0}
+.map .t,.toc a .t{text-wrap:pretty}
+.fh h3{text-wrap:balance}
+.hero .stamp{bottom:-60px}
+.cta small{text-align:center}
+.fh + .chap{margin-top:0}
+.chap{margin-top:34px}
+@media(min-width:681px){.harm-c h4{font-size:1.2rem}}
+@media(min-width:681px) and (max-width:900px){.hero{padding-left:44px;padding-right:44px}}
+@media(max-width:680px){.kick{letter-spacing:.14em}.fin .fl{display:block}}
+@media(max-width:430px){
+ .stats{grid-template-columns:minmax(0,1fr)}
+ .stat{display:grid;grid-template-columns:104px minmax(0,1fr);align-items:center;text-align:left;gap:12px;padding:12px 14px}
+ .stat-l{margin:0}
+}
+@media(max-width:360px){
+ .harm-c{grid-template-columns:minmax(0,1fr)}
+ .harm-c svg{margin-bottom:8px}
+ .harm-c h4,.harm-c p{grid-column:1}
+ .harm-c h4{font-size:1.12rem}
+ .part h2{font-size:1.72rem}
+ .say{font-size:1.2rem}
+}
+@media(min-width:681px){.part-in{grid-template-columns:clamp(150px,19vw,300px) minmax(0,1fr)}}
+/* ═══ ПРАВКИ ПРИЁМКИ 3 ═══ */
+.harm-c h4{font-size:1.1rem}
+.hb-k{text-wrap:balance}
+@media(min-width:681px){.stat-l{letter-spacing:.06em}}
+.prod-l li::before{top:calc(12px + .75em - 5px)}
+@media(max-width:430px){
+ .harm-c{grid-template-columns:minmax(0,1fr)}
+ .harm-c svg{margin-bottom:8px}
+ .harm-c h4,.harm-c p{grid-column:1}
+}
+@media(max-width:360px){.stat{grid-template-columns:78px minmax(0,1fr)}.stat-n{font-size:1.7rem}}
+@media(max-width:340px){
+ .fh h2{font-size:1.38rem}
+ .harm-c{padding:18px 12px}.harm-c h4{font-size:1rem}
+ .prod-in{padding-left:16px;padding-right:16px}
+ .prod-l li{padding-left:28px;text-wrap:balance}
+}
+.part-list a{white-space:nowrap}
+@media(max-width:430px){.hb{grid-template-columns:minmax(0,1fr)}.hb-c svg{max-width:300px;margin:0 auto}}
+@media(max-width:360px){.stat{grid-template-columns:86px minmax(0,1fr)}}
+
+/* ═══ ФОРМАТ СТАТЬИ (владелец 27.09): лист по центру, по бокам стол, как на /peace/ ═══ */
+:root{--pad:18px}
+.page{position:relative;background:var(--paper);overflow:clip}
+.doc{display:block;padding:0 var(--pad)}
+.rail{display:none!important}
+.bar-toc{display:inline-flex!important}
+.note{position:static!important;width:auto!important;transform:none!important;margin:6px 0 26px!important;background:none!important}
+.ev,.panel,.prod,.puppet,.lever{margin-left:calc(-1*var(--pad))!important;margin-right:calc(-1*var(--pad))!important}
+.part{margin-left:calc(-1*var(--pad));margin-right:calc(-1*var(--pad))}
+.reviews{margin-left:0!important;margin-right:0!important}
+.page::before{content:'';position:absolute;top:0;bottom:0;left:0;width:5px;background:linear-gradient(180deg,var(--blue),var(--blue2),var(--blue));z-index:5}
+@media(min-width:681px){:root{--pad:44px}}
+@media(min-width:900px){
+ :root{--pad:60px}
+ body{background:var(--desk)}
+ .page{max-width:860px;margin:30px auto 0;border:1px solid #C8C4B8;box-shadow:0 6px 60px rgba(30,30,20,.14)}
+ .hero{min-height:0;padding:64px var(--pad) 60px}
+ .hero-in{grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:44px}
+ .hero h1{font-size:clamp(2.6rem,4.2vw,3.35rem)}
+ .hero .stamp{left:-30px;bottom:-40px;font-size:14px}
+ .part{padding:84px var(--pad)}
+ .part-num{font-size:9rem}
+ .part-in{grid-template-columns:150px minmax(0,1fr)}
+ .reviews{grid-template-columns:minmax(0,1fr)}
+ .bar-in{max-width:860px}
+ .site-foot{max-width:860px;margin:0 auto 40px;border:1px solid #C8C4B8;border-top:0}
+}
+@media(max-width:899px){.hero{padding-left:var(--pad);padding-right:var(--pad)}}
+
+/* маркер важного: мягкая плашка по нижней половине строки, в цвете протокола */
+.hl{background:linear-gradient(transparent 56%,rgba(77,166,232,.26) 56%,rgba(77,166,232,.26) 92%,transparent 92%) no-repeat 0 0/0% 100%;color:inherit;padding:0 .08em;-webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-size 1.1s cubic-bezier(.6,0,.2,1) .2s}
+.hl.in{background-size:100% 100%}
+.panel .hl,.part .hl,.prod .hl,.puppet .hl,.lever .hl{background-image:linear-gradient(transparent 56%,rgba(125,196,255,.3) 56%,rgba(125,196,255,.3) 92%,transparent 92%)}
+h1 .hl,h2 .hl,h3 .hl,.big .hl{background-image:linear-gradient(transparent 60%,rgba(77,166,232,.24) 60%,rgba(77,166,232,.24) 94%,transparent 94%)}
+@media (prefers-reduced-motion:reduce){.hl{background-size:100% 100%;transition:none}}
+
+/* сердце и мозг: настоящее изображение и импульсы по нерву */
+.hb-img{position:relative;background:#0b1522;overflow:hidden}
+.hb-img img{width:100%;aspect-ratio:896/1152;object-fit:cover}
+.hb-img svg{position:absolute;inset:0;width:100%;height:100%}
+.hb-glow{transform-origin:470px 190px;animation:hbg 2.2s ease-in-out infinite}
+@keyframes hbg{0%,100%{opacity:.15}50%{opacity:.55}}
+
+/* ═══ КОНЦОВКА 2.0 ═══ */
+.hb-img{padding:0!important}
+.hb-img .hb-k{text-shadow:0 1px 8px rgba(0,0,0,.8)}
+.sub-h{font-family:var(--serif);font-weight:500;font-size:clamp(1.45rem,3vw,1.9rem);line-height:1.2;color:var(--ink);margin:56px 0 16px;text-wrap:balance}
+.prod.v2{background:radial-gradient(700px 360px at 80% 0%,rgba(77,166,232,.22),transparent 60%),linear-gradient(160deg,var(--navy),var(--navy2));margin-top:36px}
+.prod.v2 .prod-in{margin-top:0;padding-top:44px;padding-bottom:0}
+.prod-lead{font-size:1.08em;max-width:560px;color:#DCE6F0}
+.phones{display:flex;justify-content:center;align-items:flex-end;gap:18px;margin-top:30px;padding:0 10px}
+.ph{width:31%;max-width:210px;border-radius:26px 26px 0 0;overflow:hidden;border:6px solid #22344d;border-bottom:0;background:#0b1522;box-shadow:0 -10px 40px rgba(0,0,0,.35)}
+.ph img{width:100%;display:block}
+.ph1{transform:translateY(-22px);max-width:230px;width:35%}
+.vs{margin:26px 0 10px;border-top:2px solid var(--ink)}
+.vs-h{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:10px 0;font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);border-bottom:1px solid var(--line)}
+.vs-h span:last-child{color:var(--blue2);font-weight:700}
+.vs-r{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:14px 0;border-bottom:1px solid var(--line)}
+.vs-r p{margin:0;font-size:.95em;line-height:1.55}
+.vs-r .was{color:var(--mute);text-decoration:line-through;text-decoration-color:rgba(176,40,28,.45);text-decoration-thickness:1.5px}
+.vs-r .now{color:var(--ink);padding-left:16px;border-left:3px solid var(--blue2)}
+.nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:22px 0 14px}
+.num-c{background:var(--paper);padding:20px 14px}
+.num-c b{display:block;font-family:var(--serif);font-weight:500;font-size:2.5rem;line-height:1;color:var(--blue)}
+.num-c span{display:block;margin-top:8px;font-size:13.5px;line-height:1.45;color:var(--ink2)}
+.gets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0 10px}
+.get{display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;padding:16px;background:#fff;border:1px solid var(--line);align-items:start}
+.get svg{width:34px;height:34px;padding:6px;border-radius:50%;background:rgba(46,96,144,.1);stroke:var(--blue2);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.get h4{font-size:15.5px;font-weight:600;color:var(--ink);line-height:1.35;margin-bottom:2px}
+.get p{margin:0;font-size:14px;line-height:1.5;color:var(--mute)}
+.day{list-style:none;counter-reset:d;margin:18px 0 22px;border-left:2px solid var(--line);padding-left:26px}
+.day li{position:relative;padding:0 0 16px}
+.day li::before{counter-increment:d;content:counter(d);position:absolute;left:-40px;top:0;width:26px;height:26px;border-radius:50%;background:var(--blue2);color:#fff;font-family:var(--mono);font-size:12.5px;font-weight:700;display:grid;place-items:center}
+.day b{display:block;color:var(--ink);font-weight:600}
+.day span{display:block;font-size:.95em;line-height:1.55}
+.fin2{margin:50px calc(-1*var(--pad)) 0;padding:48px var(--pad) 44px;background:linear-gradient(160deg,var(--navy),var(--navy2));color:#DCE6F0;text-align:center}
+.fin2 .prod-sub{color:var(--sky)}
+.fin2 h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4vw,2.5rem);color:#fff;line-height:1.1;margin-bottom:14px}
+.fin2 p{max-width:520px;margin:0 auto 6px;text-wrap:balance}
+.fin2 .cta small{color:rgba(201,215,230,.7)}
+.fin2 .disc{font-size:12.5px;line-height:1.55;color:rgba(201,215,230,.55);max-width:560px;margin-top:22px}
+.btn svg{stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:680px){
+ .vs-h,.vs-r{grid-template-columns:minmax(0,1fr);gap:6px}
+ .vs-h span:first-child{display:none}
+ .vs-r .now{padding-left:12px}
+ .nums{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .num-c b{font-size:2.1rem}
+ .gets{grid-template-columns:minmax(0,1fr)}
+ .phones{gap:8px}
+ .ph{border-width:4px;border-radius:18px 18px 0 0}
+}
+@media(max-width:900px){.nums{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* ═══ ПРАВКИ ПРИЁМКИ 4 ═══ */
+.folder-tab,.folder-cap span{white-space:nowrap}
+@media(min-width:900px){
+ .page .kick{white-space:nowrap}
+ .page .part h2{font-size:clamp(2rem,3.6vw,3rem)}
+ .harm-c h4{font-size:1.22rem}
+ .day{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;border-left:0;padding:0;border-top:2px solid var(--line);padding-top:22px}
+ .day li{padding:0}
+ .day li::before{position:static;margin-bottom:10px}
+ .reviews{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .rev:first-child{grid-column:1/-1}
+ .phones{-webkit-mask-image:linear-gradient(180deg,#000 80%,transparent);mask-image:linear-gradient(180deg,#000 80%,transparent)}
+}
+.page .ev-c{padding-left:var(--pad);padding-right:var(--pad)}
+.hl{padding:0}
+.page .panel .stats{margin-left:0;margin-right:0}
+.prod.v2 .prod-in{padding-left:var(--pad);padding-right:var(--pad)}
+.vs .was{color:#7a7468;text-decoration-color:rgba(176,40,28,.55)}
+.num-c span,.fin2 small,.cta small{text-wrap:balance}
+.fin2 .disc{color:rgba(201,215,230,.78)}
+@media(max-width:900px){.hero{padding-bottom:72px}.hero .stamp{bottom:-14px}}
+@media(min-width:681px) and (max-width:899px){.folder{max-width:340px;margin-left:auto;margin-right:0}}
+@media(max-width:680px){
+ .memo-h b{display:none}.memo .stamp{top:-26px}
+ .panel-v{padding-bottom:40px}.legend{bottom:10px}
+ .phones{justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:0 18px 24px;margin-left:calc(-1*var(--pad));margin-right:calc(-1*var(--pad));scrollbar-width:none}
+ .phones .ph,.phones .ph1{flex:0 0 68%;max-width:none;width:auto;scroll-snap-align:center;transform:none;border-radius:22px;border-bottom:4px solid #22344d}
+ .vs .was::before{content:'Обычно: ';display:inline-block;margin-right:4px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute2);text-decoration:none}
+ .get{border:0;border-bottom:1px solid var(--line);background:none;padding:12px 0}
+ .day{padding-left:32px}
+}
+@media(max-width:360px){
+ .nums{grid-template-columns:minmax(0,1fr)}
+ .num-c{display:grid;grid-template-columns:72px 1fr;align-items:center;gap:10px}
+ .num-c span{margin:0}
+}
+.hb-img svg{max-width:none!important}
+
+/* ═══ ВЕРСИЯ t6 (27.09, замечания владельца) ═══ */
+/* первая строка: «Мозг» жирным, три отрицания зачёркнуты красным */
+.big0{font-family:var(--serif);font-size:clamp(1.6rem,3.4vw,2.2rem);line-height:1.22;color:var(--ink)}
+.big0 strong{font-weight:600;color:var(--blue)}
+.negs{font-family:var(--mono);font-size:clamp(.92rem,1.6vw,1.05rem);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin:-4px 0 28px}
+.negs s{text-decoration:none;position:relative;color:var(--ink2);white-space:nowrap}
+.negs s::after{content:'';position:absolute;left:-2px;right:-2px;top:52%;height:2px;background:var(--red);transform:scaleX(0);transform-origin:0 50%;transition:transform .5s cubic-bezier(.6,0,.2,1)}
+.negs.in s::after{transform:scaleX(1)}
+.negs.in s:nth-of-type(2)::after{transition-delay:.35s}.negs.in s:nth-of-type(3)::after{transition-delay:.7s}
+
+/* графика разворотов частей */
+.part{position:relative}
+.part-art{position:absolute;right:calc(var(--pad) - 10px);top:50%;width:min(360px,40%);transform:translateY(-50%);opacity:.9;z-index:0;pointer-events:none}
+.part-in{position:relative;z-index:1}
+@media(min-width:900px){.part-in{grid-template-columns:130px minmax(0,1fr);max-width:62%;margin:0}.page .part h2{font-size:clamp(2rem,3.3vw,2.7rem)}}
+@media(max-width:899px){.part-art{position:relative;right:auto;top:auto;transform:none;width:100%;max-width:420px;display:block;margin:30px auto 0}}
+.pa-line{stroke-dasharray:1;stroke-dashoffset:1}
+.part.in .pa-line,.part .pa-line{animation:pa-draw 5s ease-in-out infinite}
+@keyframes pa-draw{0%{stroke-dashoffset:1}45%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:-1}}
+.pa-err{opacity:0;animation:pa-blink 5s steps(1) infinite}
+@keyframes pa-blink{0%,30%{opacity:0}33%,36%,42%,70%{opacity:1}34%,40%{opacity:.2}80%,100%{opacity:0}}
+.pa-dot{animation:pa-pulse 1.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pa-pulse{50%{transform:scale(1.8);opacity:.4}}
+.pa-red{transform-box:fill-box;transform-origin:100% 50%;animation:pa-lift 6s cubic-bezier(.7,0,.2,1) infinite}
+@keyframes pa-lift{0%,10%{transform:scaleX(1)}25%,75%{transform:scaleX(0)}90%,100%{transform:scaleX(1)}}
+.pa-sweep{transform-origin:0 0;animation:pa-rot 3s linear infinite}
+@keyframes pa-rot{to{transform:rotate(360deg)}}
+.pa-stamp{opacity:.8}
+.pa-r1,.pa-r2,.pa-r3{transform-origin:0 0}
+.pa-r1{animation:pa-k1 7s cubic-bezier(.6,0,.3,1) infinite}.pa-r2{animation:pa-k2 7s cubic-bezier(.6,0,.3,1) infinite}.pa-r3{animation:pa-k3 7s cubic-bezier(.6,0,.3,1) infinite}
+@keyframes pa-k1{0%{transform:rotate(140deg)}45%,80%{transform:rotate(360deg)}100%{transform:rotate(500deg)}}
+@keyframes pa-k2{0%{transform:rotate(-200deg)}45%,80%{transform:rotate(0)}100%{transform:rotate(-200deg)}}
+@keyframes pa-k3{0%{transform:rotate(90deg)}45%,80%{transform:rotate(360deg)}100%{transform:rotate(450deg)}}
+.pa-core{animation:pa-open 7s ease-in-out infinite;transform-origin:0 0}
+@keyframes pa-open{0%,40%{opacity:.25;transform:scale(.8)}50%,78%{opacity:1;transform:scale(1.15)}100%{opacity:.25;transform:scale(.8)}}
+.pa-rays{opacity:0;animation:pa-rays 7s ease-in-out infinite}
+@keyframes pa-rays{0%,44%{opacity:0}52%,76%{opacity:1}86%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.part-art *{animation:none!important}.pa-line{stroke-dashoffset:0}.pa-err{opacity:1}}
+
+/* теломеры 2.0 */
+.telo{background:var(--navy);border-color:var(--navy)}
+.telo .telo-h,.telo .telo-l{color:rgba(201,215,230,.75)}
+.tcap{transform-box:fill-box;transition:transform 2.6s cubic-bezier(.3,.7,.2,1) .4s;filter:drop-shadow(0 0 5px currentColor)}
+.tt{transform-origin:50% 0}.tb{transform-origin:50% 100%}
+.telo.in .tsh{transform:scaleY(.28)}
+.telo svg{margin-bottom:6px}
+
+/* DMN на настоящем мозге */
+.dmn{position:relative;width:100%;max-width:560px}
+.dmn img{width:100%;height:auto;display:block}
+.dmn svg{position:absolute;inset:0;width:100%;height:100%}
+.dn{transform-box:fill-box;transform-origin:center;animation:dn 2.4s ease-in-out infinite}
+@keyframes dn{0%,100%{transform:scale(.75);opacity:.55}50%{transform:scale(1.15);opacity:1}}
+
+/* телефоны кабинета: целиком, в корпусе, премиально */
+.phones{align-items:center!important;gap:22px;padding:6px 10px 52px!important;-webkit-mask-image:none!important;mask-image:none!important}
+.ph,.ph1{position:relative;border-radius:34px!important;border:9px solid #1a2436!important;border-bottom:9px solid #1a2436!important;background:#000;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.6),0 0 0 1px rgba(125,196,255,.18),inset 0 0 0 1px rgba(255,255,255,.06)!important}
+.ph{width:30%;max-width:200px}
+.ph1{width:34%!important;max-width:236px!important;transform:none!important;z-index:2}
+.ph img{border-radius:25px;display:block;width:100%;height:auto}
+.isl{position:absolute;top:9px;left:50%;width:30%;height:12px;margin-left:-15%;border-radius:8px;background:#05080e;z-index:2}
+@media(max-width:680px){.ph,.ph1{flex:0 0 66%!important;max-width:none!important;width:auto!important;border-width:7px!important}}
+/* кабинет 2.0: ноутбук с путём и два телефона по бокам */
+.devices{position:relative;margin:34px 0 0;padding:0 0 46px}
+.laptop{width:84%;margin:0 auto;position:relative;z-index:1}
+.lt-screen{background:#000;border:10px solid #0d1522;border-top-width:14px;border-radius:16px 16px 0 0;box-shadow:0 0 0 1px rgba(125,196,255,.22),0 40px 80px -30px rgba(0,0,0,.7);overflow:hidden}
+.lt-screen img{display:block;width:100%;height:auto}
+.lt-base{height:16px;margin:0 -7%;background:linear-gradient(180deg,#aeb6c2,#6d7684);border-radius:2px 2px 14px 14px;position:relative}
+.lt-base::before{content:'';position:absolute;left:50%;top:0;width:16%;margin-left:-8%;height:6px;background:#5b6371;border-radius:0 0 8px 8px}
+.dv-ph{position:absolute;bottom:0;width:23%;z-index:2;border-radius:30px;border:8px solid #111a28;background:#000;overflow:hidden;box-shadow:0 30px 60px -18px rgba(0,0,0,.75),0 0 0 1px rgba(125,196,255,.2)}
+.dv-ph img{display:block;width:100%;height:auto;border-radius:22px}
+.dv-l{left:0;transform:rotate(-3deg)}.dv-r{right:0;transform:rotate(3deg)}
+.dv-ph .isl{top:8px}
+@media(max-width:680px){
+ .devices{padding-bottom:0}
+ .laptop{width:100%}
+ .lt-screen{border-width:6px;border-top-width:9px;border-radius:10px 10px 0 0}
+ .lt-base{height:10px;margin:0 -4%}
+ .dv-ph{position:relative;display:inline-block;width:44%;margin:26px 3% 0;border-width:6px;border-radius:24px;transform:none}
+ .dv-ph img{border-radius:18px}
+}
+@media(max-width:680px){.devices{text-align:center}}
+@media(min-width:900px){
+ .part-in{grid-template-columns:96px minmax(0,1fr)!important;max-width:60%!important;gap:22px!important}
+ .part-num{font-size:6.4rem!important}
+ .page .part h2{font-size:clamp(1.9rem,2.9vw,2.4rem)!important}
+ .part-art{width:36%!important}
+}
+@media(min-width:900px){.day li{min-width:0}.day span{font-size:14.5px;overflow-wrap:break-word}.dv-ph{width:21%}}
+
+@media(min-width:900px){.page .hero-in{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:40px}.folder-cap{font-size:11.5px;letter-spacing:.08em}.page .kick{white-space:normal}}
+@media(min-width:900px){.page .hero h1{font-size:clamp(2.3rem,3.4vw,2.85rem)}.page .kick{white-space:nowrap;letter-spacing:.2em}.folder-tab{font-size:11px;letter-spacing:.1em;left:14px}}
+.page .ev-c{margin:0 var(--pad);padding-left:0!important;padding-right:0!important}
+.nr{opacity:.25;animation:nr 3s ease-in-out infinite;filter:drop-shadow(0 0 4px #7DC4FF)}
+@keyframes nr{0%,100%{opacity:.2}12%{opacity:1}30%{opacity:.35}}
+.nr{opacity:.5;filter:drop-shadow(0 0 6px #7DC4FF) drop-shadow(0 0 2px #fff)}
+@keyframes nr{0%,100%{opacity:.45}12%{opacity:1}30%{opacity:.6}}
+@media(min-width:900px){.rev:first-child{grid-column:auto}}
+.folder-tab,.folder-cap{font-size:12px!important;letter-spacing:.06em!important}
+
+/* ═══ ПРИЁМКА 5 (верстальщик, 27.09): мобильная версия ═══ */
+/* номера фактов видны всегда: свой слой у шапки, мягкое проявление */
+.fh{position:relative;z-index:0;isolation:isolate}
+.fh .fh-n{opacity:0;transform:translateY(14px);transition:opacity 1.4s ease .2s,transform 1.4s cubic-bezier(.2,.8,.2,1) .2s}
+.fh.in .fh-n{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.fh .fh-n{opacity:1;transform:none;transition:none}}
+/* кикер: на телефоне две строки без висящей точки */
+.kd{font-style:normal}
+@media(max-width:680px){
+ .kick{display:block;position:relative;padding-left:36px;letter-spacing:.16em;line-height:1.8}
+ .kick::before{position:absolute;left:0;top:.9em;width:24px}
+ .kick .kd{display:block;height:0;overflow:hidden}
+ .kd{display:block;height:0;overflow:hidden}
+}
+/* подписи под фото: части через точку не рвутся, точка остаётся в конце строки */
+.ev-c .seg{white-space:nowrap}
+.hb-k .seg{white-space:nowrap}
+@media(max-width:680px){.stats .stat-l{font-size:13.5px;line-height:1.35}}
+.seg{white-space:nowrap}
+/* телефон: штамп первого экрана не закрывает подпись папки, меморандум без пустого хвоста */
+@media(max-width:680px){
+ .hero{padding-bottom:84px}
+ .hero .stamp{bottom:-62px;left:-4px}
+ .memo p:last-child{margin-bottom:0}
+}
+.fh-n{-webkit-text-stroke:1.3px rgba(46,96,144,.3)}
+@media(max-width:680px){.fh-n{font-size:5.6rem;top:-30px;right:-2px}}
+/* ≤360: врезки и столбик «Перестаёт…» без одиночных слов */
+@media(max-width:360px){
+ .big:not(.long){font-size:1.3rem}
+ .stac p{font-size:1.14rem}
+ .big0{font-size:1.3rem}
+ .prod h3,.fin2 h3{font-size:1.62rem}
+}
+@media(max-width:360px){
+ .stats .stat{grid-template-columns:minmax(0,1fr);gap:2px;padding:12px 14px}
+ .stats .stat-l{font-size:13px}
+}
+@media(max-width:340px){.harm-c{padding-left:12px;padding-right:12px}.harm-c h4{font-size:1rem}}
+@media(max-width:340px){.harm-c h4{font-size:.97rem;letter-spacing:-.005em}}
+.panel-t .stats{margin-bottom:0}
+@media(max-width:680px){.site-foot{margin-top:0}}
+@media(max-width:360px){.part-list{gap:6px}.part-list a{padding:8px 10px;gap:8px}}
+@media(max-width:360px){.card{padding:18px 12px}.card p{hyphens:manual}.dawn{padding:20px 14px}}
+@media(max-width:360px){
+ .lang-c{grid-template-columns:26px minmax(0,1fr);column-gap:10px;padding:18px 12px}
+ .lang-c p{grid-column:1/-1;margin-top:4px}
+ .test-l label{padding:10px 6px;gap:10px}
+}
+@media(max-width:360px){.btn,.btn.big{padding:0 14px;font-size:.96rem;letter-spacing:0;gap:8px}}
+/* реестр «Это он решает» на телефоне: значок у метки, текст на всю ширину колонки */
+@media(max-width:480px){
+ .reg-r{display:block;padding:16px 0}
+ .reg-i{float:left;width:32px;height:32px;margin:0 12px 0 0}
+ .reg-i svg{width:18px;height:18px}
+ .reg-r p .k{line-height:32px;margin-bottom:6px}
+}
+@media(max-width:360px){
+ .tl{padding-left:22px}.tl::before{left:5px}
+ .tl-i::before{left:-23px;width:12px;height:12px}
+}
+@media(max-width:360px){.rev{padding-left:14px;padding-right:14px}}
+.card-h .seg{white-space:normal}
+
+/* ═══ 27.09 владелец: на телефоне верхняя полоса с фактами не прилипает (мешала читать) ═══ */
+@media (max-width:767px){
+ .bar{position:relative;top:auto}
+ html{scroll-padding-top:12px}
+ [id]{scroll-margin-top:12px}
+}
+
+/* ═══ 28.09 концовка по тексту владельца: коротко и ясно ═══ */
+.k2 .prod-in{padding:34px 36px}
+.k2 h3{margin:0 0 6px}
+.k2-meta{margin:0 0 22px}
+.k2-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.k2-list li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;align-items:center;color:#DCE6F0;font-size:1.02em;line-height:1.45}
+.k2-list svg{width:40px;height:40px;padding:9px;border-radius:12px;background:rgba(125,196,255,.1);border:1px solid rgba(125,196,255,.28);fill:none;stroke:var(--sky);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.k2-stat{font-family:var(--serif);font-size:clamp(1.25rem,2.4vw,1.55rem);line-height:1.35;color:var(--ink);border-left:3px solid var(--red);padding:4px 0 4px 18px;margin:30px 0 26px}
+.k2-fin{margin-top:26px}
+@media(max-width:680px){.k2 .prod-in{padding:24px 18px}.k2-list li{grid-template-columns:34px minmax(0,1fr);gap:12px;font-size:.98em}.k2-list svg{width:34px;height:34px;padding:7px}}
+.prod.v2.k2 .prod-in{padding-bottom:42px}
+.prod.v2.k2 h3{margin-bottom:10px}
+.prod.v2.k2 .k2-meta{margin-bottom:26px}
+@media(max-width:680px){.prod.v2.k2 .prod-in{padding-bottom:30px}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="bar-in"><span class="bar-id">Протокол № NB-2026-0407</span><span class="bar-lvl">Restricted</span>
+<span class="bar-now" aria-live="polite"></span>
+<button class="bar-toc" type="button" data-toc aria-label="Оглавление">Факты <i><b></b><b></b><b></b></i></button></div><div class="prog"></div></div>
+<div class="drawer" aria-hidden="true"><div class="drawer-p" role="dialog" aria-label="Оглавление"><div class="drawer-top"><span>Оглавление досье</span><button class="drawer-x" type="button" aria-label="Закрыть">×</button></div><ul class="toc">
+<li class="tp">Часть I</li>
+<li><a href="#f1"><span class="n">01</span><span class="t">Счастье заблокировано на уровне мозга</span></a></li>
+<li><a href="#f2"><span class="n">02</span><span class="t">Внутри живёт паразит, который питается энергией, сном и радостью</span></a></li>
+<li><a href="#f3"><span class="n">03</span><span class="t">Прямо сейчас мысли разрушают тело, ускоряют старение, формируют и удерживают болезни</span></a></li>
+<li class="tp">Часть II</li>
+<li><a href="#f4"><span class="n">04</span><span class="t">Спецслужбы и военные используют это для сверхрезультатов</span></a></li>
+<li><a href="#f5"><span class="n">05</span><span class="t">Внутри каждого есть навигатор, который знает точные ответы</span></a></li>
+<li><a href="#f6"><span class="n">06</span><span class="t">Вот что стоит за «ленью», «выгоранием» и «не могу себя заставить»</span></a></li>
+<li class="tp">Часть III</li>
+<li><a href="#f7"><span class="n">07</span><span class="t">Навык, после которого уже не бывает «как раньше» ни в деньгах, ни в теле, ни в голове</span></a></li>
+<li class="tp">Финал</li>
+<li><a href="#test"><span class="n">✓</span><span class="t">Проверьте себя</span></a></li>
+<li><a href="#dalshe"><span class="n">→</span><span class="t">Что дальше</span></a></li>
+</ul></div></div>
+<div class="page">
+<section class="hero" id="top" data-sec="Досье"><div class="hero-in">
+<div class="hero-t">
+ <div class="kick">Нейробиология<i class="kd"> · </i>Рассекреченные данные</div>
+ <h1>Мозг: <span class="rd">рычаг</span>, который управляет деньгами, здоровьем и <em><span class="rd">судьбой</span></em></h1>
+ <p class="sub">Что на самом деле стоит за успехом, здоровьем, уверенностью и деньгами, и <mark class="hl">почему без этого знания ничего не работает</mark></p>
+ <div class="hero-meta"><span><b>7</b> фактов</span><span><b>3</b> части</span><span>Экспресс-диагностика</span></div>
+ <a class="hero-go" href="#vvod">Открыть досье <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+</div>
+<div class="folder">
+ <div class="folder-tab">Дело № NB-2026-0407</div><i class="clip" aria-hidden="true"></i>
+ <div class="folder-body"><img src="img/peace-d9bd3fdb.webp" alt="Досье: исследование мозга" width="1376" height="768" fetchpriority="high"><div class="folder-cap"><span>Объект: DMN</span><span>Restricted</span></div></div>
+ <div class="stamp" aria-hidden="true">Рассекречено<small>Declassified</small></div>
+</div>
+</div></section>
+<div class="doc"><main class="col">
+<section class="sec" id="vvod" data-sec="Вступление">
+<p class="lede big0 rv"><strong>Мозг</strong> - это операционная система жизни.</p>
+<p class="negs rv">Не <s>мотивация</s>, не <s>дисциплина</s> и не <s>привычки</s>.</p>
+<p class="big rv">Когда им не управляешь - он управляет тобой. И делает это жёстко.</p>
+<div class="reg rv"><div class="reg-r"><div class="reg-i"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.6-1-1.7-1.5-3-1.5-1.7 0-3 .9-3 2.2 0 3 6 1.6 6 4.6 0 1.3-1.3 2.2-3 2.2-1.4 0-2.6-.6-3.1-1.6M12 6v2M12 16v2"/></svg></div><p><span class="k">Деньги</span>Это он решает, сколько денег на счёте, потому что именно он генерирует тревогу, <span class="nw">из-за</span> которой откладываются решения, упускаются возможности и выбирается «безопасное» вместо эффективного.</p></div><div class="reg-r"><div class="reg-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21.5l8.8-8.8a5 5 0 0 0 0-7.1z"/><path d="M3.5 12.5h4l2-3 3 6 2-3h6"/></svg></div><p><span class="k">Тело</span>Это он решает, как себя чувствует тело, потому что именно он запускает гормоны стресса, подавляет иммунитет, разгоняет воспаление и удерживает лишний вес, круглосуточно и ни у кого не спрашивая разрешения.</p></div><div class="reg-r"><div class="reg-i"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/><circle cx="12" cy="12" r=".6"/></svg></div><p><span class="k">Решения</span>Это он решает, какие решения принимаются, в бизнесе, в отношениях и в жизни в целом. И пока он в режиме шума - решения будут из страха, а не из ясности.</p></div><div class="reg-r"><div class="reg-i"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="17" height="10" rx="2"/><path d="M22 11v2M5.5 10v4"/></svg></div><p><span class="k">Энергия</span>Это он решает, есть ли энергия, или к вечеру не остаётся сил даже на разговор. Потому что он сжигает 20% всей энергии на бессмысленный внутренний монолог и разрушающие паттерны.</p></div><div class="reg-r"><div class="reg-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M12 16V8M9 11l3-3 3 3"/></svg></div><p><span class="k">Уверенность</span>Это он решает, есть ли уверенность, или бесконечные «а вдруг», «а что подумают», «а вдруг не получится».</p></div></div>
+<div class="puppet rv"><svg viewBox="0 0 120 150" aria-hidden="true"><g class="pz"><line class="bar2" x1="18" y1="10" x2="102" y2="10"/><line class="bar2" x1="60" y1="2" x2="60" y2="18"/><line class="str" x1="26" y1="10" x2="28" y2="76"/><line class="str" x1="60" y1="10" x2="60" y2="40"/><line class="str" x1="94" y1="10" x2="92" y2="76"/><line class="str" x1="44" y1="10" x2="50" y2="130"/><line class="str" x1="76" y1="10" x2="70" y2="130"/><g class="fig"><circle cx="60" cy="48" r="8"/><path d="M60 56v38M60 64L28 76M60 64l32 12M60 94l-10 36M60 94l10 36"/></g></g></svg><p>Неуправляемый мозг - это кукловод. А человек – марионетка, которая ДУМАЕТ, что принимает решения сама. Но на самом деле, ВЫПОЛНЯЕТ программу, записанную годами тревоги, страха и автоматических реакций.</p></div>
+<p class="big rv">Человек, который управляет мозгом, <mark class="hl">управляет всем</mark>: деньгами, здоровьем, временем, отношениями, собой и жизнь с ним «не случается», потому что он главный.</p>
+<div class="memo"><div class="memo-h"><span>Меморандум · Нейробиология</span><b>Restricted</b></div>
+<p>Но есть рычаг, который эту способность блокирует. У 90% людей и прямо сейчас. Это конкретный нейробиологический механизм. <span class="rd">Был открыт в 2001 году</span>, а <span class="rd">изучался военными с <span class="nw">1970-х</span></span>. <span class="rd">DARPA потратило на него $2 миллиарда</span>. <span class="rd">ЦРУ засекречивало результаты до 2003 года</span>.</p></div>
+<p class="rv">Но вам о нём не рассказали. Потому что человек, который знает, как работает этот рычаг, перестаёт быть управляемым.</p>
+<div class="stac rv"><p>Перестаёт покупать лишнее.</p>
+<p>Тревожиться по расписанию.</p>
+<p>Откладывать жизнь на понедельник.</p></div>
+<p class="rv">Те, кто этот рычаг нашли и переключили, живут иначе. Просто потому, что перестали быть марионетками своего мозга.</p>
+<p class="rv">В этой статье, 7 фактов: что это за рычаг, как он работает, что отнимает и как его переключить.</p>
+<nav class="map rv" aria-label="Семь фактов"><a href="#f1"><span class="n">01</span><span class="t">Счастье заблокировано на уровне мозга</span></a><a href="#f2"><span class="n">02</span><span class="t">Внутри живёт паразит, который питается энергией, сном и радостью</span></a><a href="#f3"><span class="n">03</span><span class="t">Прямо сейчас мысли разрушают тело, ускоряют старение, формируют и удерживают болезни</span></a><a href="#f4"><span class="n">04</span><span class="t">Спецслужбы и военные используют это для сверхрезультатов</span></a><a href="#f5"><span class="n">05</span><span class="t">Внутри каждого есть навигатор, который знает точные ответы</span></a><a href="#f6"><span class="n">06</span><span class="t">Вот что стоит за «ленью», «выгоранием» и «не могу себя заставить»</span></a><a href="#f7"><span class="n">07</span><span class="t">Навык, после которого уже не бывает «как раньше» ни в деньгах, ни в теле, ни в голове</span></a></nav>
+<p class="big rv">Читайте внимательно. Эта информация меняет всё.</p>
+</section>
+<section class="part" id="part1" data-sec="Часть I · Сбой в системе, о которой молчат"><div class="part-in"><div class="part-num" aria-hidden="true">I</div><div><div class="part-k">Часть I <b>Classified</b></div><h2>Сбой в системе, о которой молчат</h2><ul class="part-list"><li><a href="#f1" title="Счастье заблокировано на уровне мозга"><span>Факт</span>01</a></li><li><a href="#f2" title="Внутри живёт паразит, который питается энергией, сном и радостью"><span>Факт</span>02</a></li><li><a href="#f3" title="Прямо сейчас мысли разрушают тело, ускоряют старение, формируют и удерживают болезни"><span>Факт</span>03</a></li></ul></div></div><svg class="part-art" viewBox="0 0 400 240" aria-hidden="true"><path d="M0 0V240" stroke="rgba(125,196,255,.08)"/><path d="M40 0V240" stroke="rgba(125,196,255,.08)"/><path d="M80 0V240" stroke="rgba(125,196,255,.08)"/><path d="M120 0V240" stroke="rgba(125,196,255,.08)"/><path d="M160 0V240" stroke="rgba(125,196,255,.08)"/><path d="M200 0V240" stroke="rgba(125,196,255,.08)"/><path d="M240 0V240" stroke="rgba(125,196,255,.08)"/><path d="M280 0V240" stroke="rgba(125,196,255,.08)"/><path d="M320 0V240" stroke="rgba(125,196,255,.08)"/><path d="M360 0V240" stroke="rgba(125,196,255,.08)"/><path d="M400 0V240" stroke="rgba(125,196,255,.08)"/><path d="M0 0H400" stroke="rgba(125,196,255,.08)"/><path d="M0 40H400" stroke="rgba(125,196,255,.08)"/><path d="M0 80H400" stroke="rgba(125,196,255,.08)"/><path d="M0 120H400" stroke="rgba(125,196,255,.08)"/><path d="M0 160H400" stroke="rgba(125,196,255,.08)"/><path d="M0 200H400" stroke="rgba(125,196,255,.08)"/><path d="M0 240H400" stroke="rgba(125,196,255,.08)"/><path d="M0 120 Q10 104 20 120 Q30 136 40 120 Q50 104 60 120 Q70 136 80 120 Q90 104 100 120 Q110 136 120 120 Q130 104 140 120 L140 120 L146 159 L152 146 L158 32 L164 54 L170 36 L176 96 L182 45 L188 148 L194 89 L200 147 L206 72 L212 27 L218 146 L224 95 L230 63 L236 158 L242 27 L248 211 L254 87 L260 53 L262 120 Q272 136 282 120 Q292 104 302 120 Q312 136 322 120 Q332 104 342 120 Q352 136 362 120 Q372 104 382 120 Q392 136 402 120" fill="none" stroke="#7DC4FF" stroke-width="2.2" stroke-linejoin="round" pathLength="1" class="pa-line"/><rect x="140" y="18" width="122" height="204" fill="rgba(255,122,92,.08)" stroke="rgba(255,122,92,.45)" stroke-dasharray="4 5" class="pa-err"/><circle cx="201" cy="120" r="5" fill="#ff7a5c" class="pa-dot"/><path d="M0 232H400" stroke="rgba(125,196,255,.3)"/></svg></section>
+<section class="sec" id="f1" data-sec="Факт 01 из 07">
+<header class="fh rv"><div class="fh-n" aria-hidden="true">01</div><div class="fh-top"><span class="num">ФАКТ №01</span></div><h2><mark class="hl">Счастье заблокировано на уровне мозга</mark>. И никакие деньги, отношения или успех его не разблокируют</h2></header>
+<p class="rv">Есть вещь, о которой почти никто не говорит вслух, хотя именно она является фундаментом, на котором держится всё остальное.</p>
+<p class="gword rv">Счастье</p>
+<p class="rv">Именно счастье. И не то, которое <span class="nw">«когда-нибудь</span> потом», когда заработаю денег, куплю дом, рожу детей… А то, которое прямо сейчас, в этом теле и в эту секунду. Ощущение: я на месте, я - это Я. Жизнь хороша.</p>
+<p class="rv">Многие считают такое состояние приятным дополнением к успеху. Устроено всё наоборот: это база, от которой зависит буквально всё.</p>
+<p class="rv">Когда человек в состоянии внутреннего покоя, ресурса и наполненности, мозг работает принципиально иначе. Неокортекс, где рождаются идеи, стратегии и видение, активен, поэтому человек замечает возможности, принимает точные решения и действует из ясности. Рептильный мозг - центр выживания, спокоен. Не орёт «опасность!», не запускает панику, не заставляет спасаться от угроз, которых нет.</p>
+<p class="rv">В этом состоянии гормональный фон здоровый: кортизол низкий, серотонин и дофамин в балансе, DHEA активен. Тело восстанавливается, иммунитет работает, вес приходит в норму сам, энергии хватает на всё. Деньги приходят, потому что ясная голова видит то, что тревожная пропускает. Отношения складываются, потому что рядом со спокойным человеком хорошо. Цели достигаются за счёт ресурса, без насилия над собой.</p>
+<p class="rv">И речь далеко не про «мышление изобилия». Так устроена нейробиология: <mark class="hl">Счастье - это операционная среда, в которой всё работает</mark>. Без неё (читай: сбалансированного гормонального фона) ничего не работает, как бы ни старался.</p>
+<p class="rv">И вот в чём ловушка: почти у всех эта среда заблокирована.</p>
+<figure class="ev "><div class="ev-f"><img src="img/lm3-f1.webp" alt="Ребёнок обнимает отца, а мысли отца далеко" width="1376" height="768" loading="lazy" decoding="async"><div class="scan"></div><i class="corner a"></i><i class="corner b"></i><i class="corner c"></i><i class="corner d"></i></div><figcaption class="ev-c"><span><span class="seg">Фото из дела ·</span> <span class="seg">Хозяина нет дома</span></span><span class="tag">Science · 2010</span></figcaption></figure>
+<p class="rv">В 2010 году гарвардские психологи <strong>Киллингсворт и Гилберт</strong> опубликовали в журнале <strong>Science</strong> исследование, которое объясняет почему. Они написали приложение для смартфона, которое в случайные моменты дня спрашивало людей, что они делают, о чём думают и как себя чувствуют. Собрали четверть миллиона ответов от двух с лишним тысяч человек из 83 стран.</p>
+<div class="dial rv" data-dial><div class="dial-w"><svg viewBox="0 0 200 200" aria-hidden="true"><defs><linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2E6090"/><stop offset="1" stop-color="#B0281C"/></linearGradient></defs><circle class="tr" cx="100" cy="100" r="86"/><circle class="fl" cx="100" cy="100" r="86"/></svg><div class="dial-v" data-to="46,9" data-suf="%">46,9%</div></div><p>времени бодрствования мозг уносит человека из настоящего момента</p></div>
+<p class="rv">Почти половину времени, пока мы не спим, мозг уводит нас в тревогу о будущем, в пережёвывание прошлого, в бесконечное «а что если». Половина жизни проходит в месте, которого не существует. И в эти моменты, а это половина жизни, <strong>люди были глубоко несчастны</strong>.И даже не потому что думали о плохом, они могли думать о <span class="nw">чем-то</span> приятном, а потому что <strong><mark class="hl">их не было там, где они были</mark></strong>.</p>
+<blockquote class="pull rv"><q>«Блуждающий ум -  несчастный ум»</q><cite>Killingsworth &amp; Gilbert<i class="kd"> · </i>Science, 2010</cite></blockquote>
+<p class="rv"><strong>Счастье физически невозможно, когда человека нет в настоящем.</strong> Мозг не может одновременно тревожиться о завтра, и наслаждаться тем, что есть. Не может прокручивать вчера, и чувствовать покой. И пока он в этом режиме, неокортекс выключен, рептильный мозг рулит, и гормоны стресса хлещут.</p>
+<p class="rv">Ребёнок обнимает, а голова на работе. Партнёр говорит «люблю», а внутри список дел. Достигнута мечта, а радости нет, потому что <strong>некому радоваться: хозяина нет дома.</strong></p>
+<p class="rv">И никакие деньги это не починят. Никакой партнёр и никакая карьера. Потому что <strong>сначала нужно вернуться в собственную голову</strong> и забрать управление у машины, которая давно решает за вас.</p>
+<p class="say rv">У этой машины есть имя.</p>
+</section>
+<div class="hr" aria-hidden="true"></div>
+<section class="sec" id="f2" data-sec="Факт 02 из 07">
+<header class="fh rv"><div class="fh-n" aria-hidden="true">02</div><div class="fh-top"><span class="num">ФАКТ №02</span></div><h2>Внутри живёт паразит, который питается энергией, сном и радостью. И его кормят каждый день, не зная об этом.</h2></header>
+<p class="lede rv">Сделайте одну вещь прямо сейчас, я серьёзно. Закройте глаза на тридцать секунд, ничего не делайте и просто заметьте, что происходит внутри.</p>
+<p class="gword q rv">Тишина?</p>
+<p class="rv">Нет. Там толпа, и мысли лезут одна поверх другой: «что на ужин», «забыл перезвонить», «а если не успею», «какой там курс доллара», «почему она не ответила», «зря я тогда не…», «господи, когда это закончится».</p>
+<figure class="ev "><div class="ev-f"><img src="img/lm4-f2.webp" alt="Default Mode Network, карта активности мозга" width="1376" height="768" loading="lazy" decoding="async"><div class="scan"></div><i class="corner a"></i><i class="corner b"></i><i class="corner c"></i><i class="corner d"></i></div><figcaption class="ev-c"><span><span class="seg">Сеть пассивного режима ·</span> <span class="seg">DMN</span></span><span class="tag">Raichle · 2001</span></figcaption></figure>
+<p class="rv">Спойлер: это ваш мозг, который фоново, каждую минуту, изо дня в день является <strong>тем самым кукловодом</strong>. В 2001 году его открыл американский нейробиолог Маркус Рейчл. Он заметил, что когда человек в сканере ничем не занят, мозг не затихает, а наоборот: целая сеть областей оживает и начинает работать ещё активнее. Рейчл назвал её Default Mode Network (DMN), сетью пассивного режима работы мозга.</p>
+<p class="big rv">Главное, что про неё нужно понять раз и навсегда: <mark class="hl">DMN формирует ваше состояние</mark>, и называть её просто фоновым шумом было бы слишком мягко.</p>
+<div class="panel rv"><div class="panel-v"><div class="dmn"><img src="img/lm3-dmn.webp" alt="Сеть пассивного режима работы мозга" width="627" height="534" loading="lazy"><svg viewBox="0 0 627 534" aria-hidden="true"><path d="M297 232 L329 256" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M297 232 L348 200" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M297 232 L258 201" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M297 232 L311 282" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M297 232 L249 269" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M297 232 L360 247" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M297 232 L261 235" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M524 205 L486 182" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M524 205 L503 245" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M169 218 L115 253" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M169 218 L172 282" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M169 218 L136 192" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M169 218 L181 184" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M169 218 L197 244" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M169 218 L211 170" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M169 218 L209 207" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M382 300 L394 249" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M382 300 L356 321" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M382 300 L434 274" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M382 300 L360 247" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M382 300 L427 307" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M382 300 L344 293" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M125 158 L171 140" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M125 158 L94 205" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M125 158 L136 192" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M125 158 L181 184" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M394 249 L434 274" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M394 249 L360 247" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M394 249 L433 238" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M394 249 L380 213" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M334 87 L282 100" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M334 87 L308 122" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M171 140 L231 137" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M171 140 L136 192" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M171 140 L181 184" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M171 140 L200 125" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M171 140 L211 170" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M94 205 L115 253" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M94 205 L136 192" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M291 314 L356 321" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M291 314 L311 282" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M291 314 L249 269" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M291 314 L344 293" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M291 314 L241 298" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M329 256 L348 200" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M329 256 L311 282" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M329 256 L360 247" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M329 256 L344 293" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M300 151 L282 100" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M300 151 L308 122" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M483 275 L503 245" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M483 275 L434 274" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M483 275 L433 238" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M231 137 L200 125" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M231 137 L282 100" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M231 137 L211 170" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M448 186 L486 182" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M448 186 L454 148" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M448 186 L433 238" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><path d="M486 182 L454 148" stroke="rgba(125,196,255,.28)" stroke-width="1.2"/><circle cx="297" cy="232" r="3.4" fill="#7DC4FF" class="nr" style="animation-delay:1.73s;animation-duration:3.8s"/><circle cx="524" cy="205" r="4.6" fill="#7DC4FF" class="nr" style="animation-delay:1.91s;animation-duration:2.8s"/><circle cx="169" cy="218" r="3.5" fill="#7DC4FF" class="nr" style="animation-delay:2.47s;animation-duration:4.1s"/><circle cx="382" cy="300" r="3.4" fill="#7DC4FF" class="nr" style="animation-delay:3.12s;animation-duration:2.2s"/><circle cx="125" cy="158" r="3.5" fill="#7DC4FF" class="nr" style="animation-delay:0.91s;animation-duration:3.6s"/><circle cx="394" cy="249" r="3.7" fill="#7DC4FF" class="nr" style="animation-delay:1.42s;animation-duration:3.4s"/><circle cx="334" cy="87" r="3.4" fill="#7DC4FF" class="nr" style="animation-delay:2.92s;animation-duration:2.4s"/><circle cx="171" cy="140" r="4.0" fill="#7DC4FF" class="nr" style="animation-delay:1.00s;animation-duration:2.6s"/><circle cx="94" cy="205" r="4.0" fill="#7DC4FF" class="nr" style="animation-delay:1.75s;animation-duration:3.0s"/><circle cx="291" cy="314" r="3.9" fill="#7DC4FF" class="nr" style="animation-delay:2.12s;animation-duration:2.5s"/><circle cx="329" cy="256" r="3.5" fill="#7DC4FF" class="nr" style="animation-delay:2.53s;animation-duration:3.5s"/><circle cx="300" cy="151" r="4.0" fill="#7DC4FF" class="nr" style="animation-delay:3.41s;animation-duration:3.4s"/><circle cx="483" cy="275" r="4.6" fill="#7DC4FF" class="nr" style="animation-delay:0.93s;animation-duration:3.7s"/><circle cx="231" cy="137" r="4.5" fill="#7DC4FF" class="nr" style="animation-delay:3.61s;animation-duration:2.8s"/><circle cx="448" cy="186" r="3.7" fill="#7DC4FF" class="nr" style="animation-delay:3.69s;animation-duration:2.6s"/><circle cx="486" cy="182" r="4.8" fill="#7DC4FF" class="nr" style="animation-delay:3.55s;animation-duration:2.5s"/><circle cx="115" cy="253" r="3.6" fill="#7DC4FF" class="nr" style="animation-delay:2.91s;animation-duration:2.7s"/><circle cx="454" cy="148" r="3.4" fill="#7DC4FF" class="nr" style="animation-delay:3.33s;animation-duration:3.0s"/><circle cx="348" cy="200" r="4.5" fill="#7DC4FF" class="nr" style="animation-delay:0.50s;animation-duration:3.0s"/><circle cx="172" cy="282" r="4.3" fill="#7DC4FF" class="nr" style="animation-delay:0.07s;animation-duration:2.6s"/><circle cx="136" cy="192" r="4.3" fill="#7DC4FF" class="nr" style="animation-delay:3.65s;animation-duration:4.1s"/><circle cx="226" cy="327" r="3.4" fill="#7DC4FF" class="nr" style="animation-delay:2.02s;animation-duration:3.7s"/><circle cx="181" cy="184" r="4.0" fill="#7DC4FF" class="nr" style="animation-delay:2.74s;animation-duration:2.6s"/><circle cx="197" cy="244" r="3.3" fill="#7DC4FF" class="nr" style="animation-delay:0.42s;animation-duration:2.3s"/><circle cx="258" cy="201" r="4.1" fill="#7DC4FF" class="nr" style="animation-delay:2.06s;animation-duration:3.3s"/><circle cx="356" cy="321" r="3.4" fill="#7DC4FF" class="nr" style="animation-delay:0.74s;animation-duration:2.6s"/><circle cx="200" cy="125" r="4.5" fill="#7DC4FF" class="nr" style="animation-delay:3.96s;animation-duration:4.1s"/><circle cx="503" cy="245" r="3.4" fill="#7DC4FF" class="nr" style="animation-delay:0.25s;animation-duration:4.1s"/><circle cx="282" cy="100" r="3.9" fill="#7DC4FF" class="nr" style="animation-delay:3.06s;animation-duration:2.9s"/><circle cx="366" cy="155" r="3.9" fill="#7DC4FF" class="nr" style="animation-delay:2.06s;animation-duration:3.1s"/><circle cx="311" cy="282" r="4.2" fill="#7DC4FF" class="nr" style="animation-delay:0.05s;animation-duration:3.6s"/><circle cx="434" cy="274" r="4.6" fill="#7DC4FF" class="nr" style="animation-delay:0.73s;animation-duration:3.1s"/><circle cx="249" cy="269" r="4.4" fill="#7DC4FF" class="nr" style="animation-delay:1.62s;animation-duration:2.6s"/><circle cx="360" cy="247" r="3.5" fill="#7DC4FF" class="nr" style="animation-delay:2.05s;animation-duration:2.2s"/><circle cx="433" cy="238" r="4.6" fill="#7DC4FF" class="nr" style="animation-delay:3.21s;animation-duration:3.6s"/><circle cx="120" cy="288" r="4.6" fill="#7DC4FF" class="nr" style="animation-delay:2.52s;animation-duration:3.0s"/><circle cx="380" cy="213" r="4.2" fill="#7DC4FF" class="nr" style="animation-delay:2.02s;animation-duration:4.2s"/><circle cx="409" cy="128" r="4.5" fill="#7DC4FF" class="nr" style="animation-delay:1.03s;animation-duration:4.0s"/><circle cx="308" cy="122" r="4.4" fill="#7DC4FF" class="nr" style="animation-delay:3.11s;animation-duration:3.8s"/><circle cx="211" cy="170" r="3.8" fill="#7DC4FF" class="nr" style="animation-delay:3.59s;animation-duration:4.0s"/><circle cx="261" cy="235" r="4.3" fill="#7DC4FF" class="nr" style="animation-delay:3.07s;animation-duration:3.7s"/><circle cx="427" cy="307" r="3.8" fill="#7DC4FF" class="nr" style="animation-delay:2.89s;animation-duration:2.3s"/><circle cx="344" cy="293" r="3.7" fill="#7DC4FF" class="nr" style="animation-delay:1.88s;animation-duration:2.2s"/><circle cx="241" cy="298" r="3.8" fill="#7DC4FF" class="nr" style="animation-delay:2.55s;animation-duration:3.4s"/><circle cx="180" cy="317" r="3.6" fill="#7DC4FF" class="nr" style="animation-delay:3.78s;animation-duration:3.5s"/><circle cx="209" cy="207" r="3.7" fill="#7DC4FF" class="nr" style="animation-delay:2.64s;animation-duration:3.3s"/><defs><radialGradient id="dg"><stop offset="0" stop-color="#ffb070" stop-opacity=".95"/><stop offset=".45" stop-color="#ff7a4a" stop-opacity=".45"/><stop offset="1" stop-color="#ff7a4a" stop-opacity="0"/></radialGradient></defs><path id="de0" d="M112 212 Q257 141 402 150" fill="none" stroke="rgba(255,170,120,.35)" stroke-width="1.6"/><circle r="4" fill="#ffd9b8"><animateMotion dur="1.6s" begin="0.0s" repeatCount="indefinite"><mpath href="#de0"/></animateMotion></circle><path id="de1" d="M402 150 Q437 146 472 222" fill="none" stroke="rgba(255,170,120,.35)" stroke-width="1.6"/><circle r="4" fill="#ffd9b8"><animateMotion dur="1.9s" begin="0.3s" repeatCount="indefinite"><mpath href="#de1"/></animateMotion></circle><path id="de2" d="M112 212 Q206 222 300 312" fill="none" stroke="rgba(255,170,120,.35)" stroke-width="1.6"/><circle r="4" fill="#ffd9b8"><animateMotion dur="2.1s" begin="0.7s" repeatCount="indefinite"><mpath href="#de2"/></animateMotion></circle><path id="de3" d="M300 312 Q351 191 402 150" fill="none" stroke="rgba(255,170,120,.35)" stroke-width="1.6"/><circle r="4" fill="#ffd9b8"><animateMotion dur="2.4s" begin="1.0s" repeatCount="indefinite"><mpath href="#de3"/></animateMotion></circle><path id="de4" d="M472 222 Q386 227 300 312" fill="none" stroke="rgba(255,170,120,.35)" stroke-width="1.6"/><circle r="4" fill="#ffd9b8"><animateMotion dur="2.6s" begin="1.4s" repeatCount="indefinite"><mpath href="#de4"/></animateMotion></circle><path id="de5" d="M112 212 Q190 234 268 336" fill="none" stroke="rgba(255,170,120,.35)" stroke-width="1.6"/><circle r="4" fill="#ffd9b8"><animateMotion dur="2.9s" begin="1.8s" repeatCount="indefinite"><mpath href="#de5"/></animateMotion></circle><path id="de6" d="M268 336 Q335 203 402 150" fill="none" stroke="rgba(255,170,120,.35)" stroke-width="1.6"/><circle r="4" fill="#ffd9b8"><animateMotion dur="3.1s" begin="2.1s" repeatCount="indefinite"><mpath href="#de6"/></animateMotion></circle><circle cx="112" cy="212" r="46" fill="url(#dg)" class="dn" style="animation-delay:0.0s"/><circle cx="112" cy="212" r="6" fill="#fff1e0"/><circle cx="402" cy="150" r="46" fill="url(#dg)" class="dn" style="animation-delay:0.4s"/><circle cx="402" cy="150" r="6" fill="#fff1e0"/><circle cx="472" cy="222" r="46" fill="url(#dg)" class="dn" style="animation-delay:0.8s"/><circle cx="472" cy="222" r="6" fill="#fff1e0"/><circle cx="300" cy="312" r="46" fill="url(#dg)" class="dn" style="animation-delay:1.2s"/><circle cx="300" cy="312" r="6" fill="#fff1e0"/><circle cx="268" cy="336" r="46" fill="url(#dg)" class="dn" style="animation-delay:1.6s"/><circle cx="268" cy="336" r="6" fill="#fff1e0"/></svg></div><div class="legend"><span><i style="background:#ff9678"></i>DMN</span><span><i style="background:#7DC4FF"></i>Нейроны</span></div></div><div class="panel-t"><div class="panel-k">Default Mode Network</div><p>Каждое «а вдруг?» впрыскивает в кровь каплю страха. Каждое «зря я так сказал» добавляет стыда. «Что обо мне подумают» подливает тревоги, а «у других получается, а у меня нет» - отчаяния. Тысячи таких уколов каждый день, годами.</p></div></div>
+<div class="whence rv"><p>Вот откуда ощущение, что жизнь тяжёлая, хотя объективно «всё нормально».</p>
+<p>Вот откуда «просыпаюсь уже уставшим», DMN потребляет 20% всей энергии мозга. Двадцать процентов - даже ночью, даже «на отдыхе».</p>
+<p>Вот откуда «отпуск не помогает», потому что DMN едет с вами и на море, и в горы, и на Бали - везде.</p>
+<p>Вот откуда «нет сил вообще ни на что» - мозг разряжается к обеду, потому что с утра его выжимает шум.</p>
+<p>Вот откуда «всё раздражает»</p></div>
+<p class="rv">Хуже всего то, что люди к этому привыкают и решают, что так и должно быть: «я просто тревожный», «такой характер», «наверное, надо больше спать». А на деле у них гиперактивная DMN, тот самый кукловод, который съедает энергию, сон, радость и решения и дёргает за ниточки, пока его не выключат.</p>
+<p class="rv">Но сначала о том, что он делает с телом. Потому что тревога и бессонница - это только начало.</p>
+</section>
+<div class="hr" aria-hidden="true"></div>
+<section class="sec" id="f3" data-sec="Факт 03 из 07">
+<header class="fh rv"><div class="fh-n" aria-hidden="true">03</div><div class="fh-top"><span class="num">ФАКТ №03</span></div><h2>Прямо сейчас мысли разрушают тело, ускоряют старение, формируют и удерживают болезни. Без преувеличений – так работает биохимия.</h2></header>
+<p class="lede rv">Каждый раз, когда DMN прокручивает тревожную мысль, мозг отправляет телу команду: «Опасность!»</p>
+<p class="rv"><mark class="hl">Тело не умеет отличить мысль об угрозе от реальной угрозы</mark>. Для него «а вдруг меня уволят\а вдруг закончатся деньги» и «за мной бежит медведь» - один и тот же сигнал. </p>
+<p class="chain"><span class="c">Кортизол</span> – <span class="c">адреналин</span> – <span class="c">мобилизация</span> – <span class="c">сжатие</span> - <span class="c">готовность к бою.</span></p>
+<p class="rv">Бой не наступает. Потому что его изначально не было. Была мысль, но тело уже отреагировало.</p>
+<p class="rv">И вот что происходит, когда этот режим не выключается месяцами, годами, десятилетиями:</p>
+<div class="harm rv"><div class="harm-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22c4 0 7-2.8 7-6.8 0-3.4-2.2-5.6-3.6-7.2-.3 1.8-1.3 3-2.4 3.4.4-3.3-1-6.4-3.5-8.4 0 3.2-2 5.2-3.5 7.2S5 13.6 5 15.2C5 19.2 8 22 12 22z"/></svg><h4>Хроническое воспаление.</h4><p>Тихий пожар внутри, который не чувствуется, основа 80% всех серьёзных болезней. Сердце, суставы, кишечник, кожа, щитовидка - всё горит на медленном огне</p></div><div class="harm-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M4 4l16 16"/></svg><h4>Иммунитет перестаёт защищать.</h4><p>Простудные заболевания каждый сезон и не только, восстановление неделями, аллергии из ниоткуда, слабость и плохое самочувствие на ровном месте, аутоиммунные реакции, тело атакует само себя</p></div><div class="harm-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21h14l-2-12H7z"/><circle cx="12" cy="6" r="3"/><path d="M12 13l2 3"/></svg><h4>Лишний вес, который не уходит</h4><p>Кортизол блокирует жиросжигание физически. Тело запасает жир «на случай катастрофы». Никакая диета не победит биохимию хронического стресса</p></div><div class="harm-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 4A3 3 0 0 0 6.5 7a3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 3 3h1V4z"/><path d="M14.5 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-3 3h-1V4z"/><path d="M6.5 12h2M15.5 12h2"/></svg><h4>Память разрушается</h4><p>Гиппокамп деградирует от кортизола. «Забываю всё», «не могу сосредоточиться», «где опять мои ключи», «у меня плохая память» - это не правда, по факту дело в повреждении</p></div><div class="harm-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h12M6 22h12M7 2c0 5 5 6 5 10s-5 5-5 10M17 2c0 5-5 6-5 10s5 5 5 10"/></svg><h4>Кожа стареет, волосы выпадают, гормоны съезжают</h4><p>И кажется, что это «возраст», но на самом деле это режим нервной системы</p></div></div>
+<figure class="ev "><div class="ev-f"><img src="img/lm4-f3.webp" alt="Хромосомы и теломеры" width="1376" height="768" loading="lazy" decoding="async"><div class="scan"></div><i class="corner a"></i><i class="corner b"></i><i class="corner c"></i><i class="corner d"></i></div><figcaption class="ev-c"><span><span class="seg">Теломеры хромосом ·</span> <span class="seg">Блэкбёрн, Эпель ·</span> <span class="seg">Нобелевская премия 2009</span></span><span class="tag">Nobel Prize</span></figcaption></figure>
+<p class="rv">Походы к врачам, анализы, витамины, БАДы за бешеные деньги, очередная диета, поиск «хорошего специалиста»… А то, что запускает процесс, сидит внутри, и его почти никто не трогает. Мировой фармацевтический рынок оценивается примерно в полтора триллиона долларов в год, и устроен он так, чтобы лечить следствия. Медицина нужна, и отказываться от неё мы не призываем. Но пока человек не знает, что здоровье зависит в большинстве от режима работы мозга, он остаётся вечным клиентом.</p>
+<p class="rv">И исследование, от которого становится <span class="nw">по-настоящнму</span> страшно: Нобелевский лауреат Элизабет Блэкбёрн и психолог Элисса Эпель из UCSF обнаружили: хроническая руминация - то самое бесконечное пережёвывание мыслей, физически укорачивает теломеры. Теломеры — это защитные колпачки на концах хромосом, биологические часы клетки: чем они короче, тем клетка старше.</p>
+<p class="big rv">У людей с неутихающим умом клетки были биологически старше на 10 лет. Не месяцев, ЛЕТ!!! При том же возрасте по паспорту.</p>
+<div class="telo rv"><div class="telo-h">Теломеры · биологические часы клетки</div><div class="telo-l">Тихий ум</div><svg viewBox="0 0 600 150" aria-hidden="true"><defs><filter id="tg0"><feGaussianBlur stdDeviation="3"/></filter></defs><g transform="translate(70 75) rotate(-24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tb"/></g><g transform="translate(70 75) rotate(24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tb"/></g><circle cx="70" cy="75" r="7" fill="#0E2038" stroke="rgba(125,196,255,.6)"/><g transform="translate(185 75) rotate(-24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tb"/></g><g transform="translate(185 75) rotate(24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tb"/></g><circle cx="185" cy="75" r="7" fill="#0E2038" stroke="rgba(125,196,255,.6)"/><g transform="translate(300 75) rotate(-24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tb"/></g><g transform="translate(300 75) rotate(24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tb"/></g><circle cx="300" cy="75" r="7" fill="#0E2038" stroke="rgba(125,196,255,.6)"/><g transform="translate(415 75) rotate(-24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tb"/></g><g transform="translate(415 75) rotate(24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tb"/></g><circle cx="415" cy="75" r="7" fill="#0E2038" stroke="rgba(125,196,255,.6)"/><g transform="translate(530 75) rotate(-24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tb"/></g><g transform="translate(530 75) rotate(24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#7DC4FF" class="tcap tb"/></g><circle cx="530" cy="75" r="7" fill="#0E2038" stroke="rgba(125,196,255,.6)"/></svg><div class="telo-l">Неутихающий ум</div><svg viewBox="0 0 600 150" aria-hidden="true"><defs><filter id="tg1"><feGaussianBlur stdDeviation="3"/></filter></defs><g transform="translate(70 75) rotate(-24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tb"/></g><g transform="translate(70 75) rotate(24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tb"/></g><circle cx="70" cy="75" r="7" fill="#0E2038" stroke="rgba(125,196,255,.6)"/><g transform="translate(185 75) rotate(-24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tb"/></g><g transform="translate(185 75) rotate(24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tb"/></g><circle cx="185" cy="75" r="7" fill="#0E2038" stroke="rgba(125,196,255,.6)"/><g transform="translate(300 75) rotate(-24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tb"/></g><g transform="translate(300 75) rotate(24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tb"/></g><circle cx="300" cy="75" r="7" fill="#0E2038" stroke="rgba(125,196,255,.6)"/><g transform="translate(415 75) rotate(-24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tb"/></g><g transform="translate(415 75) rotate(24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tb"/></g><circle cx="415" cy="75" r="7" fill="#0E2038" stroke="rgba(125,196,255,.6)"/><g transform="translate(530 75) rotate(-24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tb"/></g><g transform="translate(530 75) rotate(24)"><rect x="-9" y="-58" width="18" height="116" rx="9" fill="#1E3F63" stroke="rgba(125,196,255,.45)"/><rect x="-9" y="-58" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tt"/><rect x="-9" y="36" width="18" height="22" rx="9" fill="#ff8a7a" class="tcap tsh tb"/></g><circle cx="530" cy="75" r="7" fill="#0E2038" stroke="rgba(125,196,255,.6)"/></svg></div>
+<div class="stats"><div class="stat"><div class="stat-n" data-to="80" data-pre="" data-suf="%">80%</div><div class="stat-l">болезней связаны<br>с воспалением</div></div><div class="stat"><div class="stat-n" data-to="10" data-pre="−" data-suf="">−10</div><div class="stat-l">лет на уровне клеток</div></div><div class="stat"><div class="stat-n" data-to="43" data-pre="+" data-suf="%">+43%</div><div class="stat-l">теломераза при тихом уме</div></div></div>
+<p class="rv">Мысли прямо сейчас решают, с какой скоростью идёт старение, как часто болеть, сколько лет осталось. За исследования теломер Блэкбёрн в 2009 году получила Нобелевскую премию.</p>
+<p class="rv">И наоборот: у тех, кто научился выключать DMN, теломераза (фермент, восстанавливающий хромосомы) активнее на 43%. Клетки молодеют, тело восстанавливается. Не кремы и не процедуры. Состояние!</p>
+<p class="rv">Но об этом, тишина. Потому что если человек знает, что здоровье зависит от режима мозга, а не от таблеток, он перестаёт быть клиентом.</p>
+<p class="rv">Сколько денег и сил мы отдаём на анализы, витамины, процедуры, врачей, при этом совсем не трогая то, что запускает процесс изнутри. Если стресс годами работает как фоновая программа, лечить только его последствия - всё равно, что вычерпывать воду из лодки, не заделав пробоину.</p>
+</section>
+<section class="part" id="part2" data-sec="Часть II · Что от вас скрывали"><div class="part-in"><div class="part-num" aria-hidden="true">II</div><div><div class="part-k">Часть II <b>Top Secret</b></div><h2>Что от вас скрывали</h2><ul class="part-list"><li><a href="#f4" title="Спецслужбы и военные используют это для сверхрезультатов"><span>Факт</span>04</a></li><li><a href="#f5" title="Внутри каждого есть навигатор, который знает точные ответы"><span>Факт</span>05</a></li><li><a href="#f6" title="Вот что стоит за «ленью», «выгоранием» и «не могу себя заставить»"><span>Факт</span>06</a></li></ul></div></div><svg class="part-art" viewBox="0 0 400 240" aria-hidden="true"><rect x="24" y="16" width="360" height="216" rx="3" fill="rgba(201,215,230,.04)" stroke="rgba(125,196,255,.3)"/><path d="M24 34H384" stroke="rgba(125,196,255,.2)"/><rect x="44" y="46" width="300" height="7" rx="2" fill="rgba(201,215,230,.35)"/><rect x="44" y="43" width="300" height="13" fill="#0a1422" class="pa-red" style="animation-delay:0.6s"/><rect x="44" y="70" width="250" height="7" rx="2" fill="rgba(201,215,230,.35)"/><rect x="44" y="94" width="320" height="7" rx="2" fill="rgba(201,215,230,.35)"/><rect x="44" y="91" width="320" height="13" fill="#0a1422" class="pa-red" style="animation-delay:1.6s"/><rect x="44" y="118" width="190" height="7" rx="2" fill="rgba(201,215,230,.35)"/><rect x="44" y="142" width="280" height="7" rx="2" fill="rgba(201,215,230,.35)"/><rect x="44" y="139" width="280" height="13" fill="#0a1422" class="pa-red" style="animation-delay:2.6s"/><rect x="44" y="166" width="230" height="7" rx="2" fill="rgba(201,215,230,.35)"/><rect x="44" y="163" width="230" height="13" fill="#0a1422" class="pa-red" style="animation-delay:3.1s"/><rect x="44" y="190" width="160" height="7" rx="2" fill="rgba(201,215,230,.35)"/><g transform="translate(330 186)"><circle r="34" fill="none" stroke="rgba(255,138,122,.35)"/><circle r="20" fill="none" stroke="rgba(255,138,122,.25)"/><path d="M0 0L0 -34A34 34 0 0 1 29 -17z" fill="rgba(255,138,122,.25)" class="pa-sweep"/></g><rect x="232" y="22" width="120" height="30" rx="2" fill="none" stroke="#ff8a7a" stroke-width="2" transform="rotate(-8 292 37)" class="pa-stamp"/></svg></section>
+<section class="sec" id="f4" data-sec="Факт 04 из 07">
+<header class="fh rv"><div class="fh-n" aria-hidden="true">04</div><div class="fh-top"><span class="num">ФАКТ №04</span></div><h2>Спецслужбы и военные используют это для сверхрезультатов. Но рассказывать массам невыгодно.</h2></header>
+<p class="lede rv">Вот что знают бойцы спецназа и чего не знает большинство из нас: <mark class="hl">когда в голове тихо, человек почти неуязвим</mark>. Решения точнее, реакция быстрее, страх не парализует, фокус абсолютный, а интуиция работает на полную.</p>
+<figure class="ev "><div class="ev-f"><img src="img/lm5-f4.webp" alt="Подготовка военных, тренировка внимания" width="1376" height="768" loading="lazy" decoding="async"><div class="scan"></div><i class="corner a"></i><i class="corner b"></i><i class="corner c"></i><i class="corner d"></i></div><figcaption class="ev-c"><span><span class="seg">Архив ·</span> <span class="seg">Тишина перед заданием</span></span><span class="tag">Military</span></figcaption></figure>
+<div class="tl">
+<div class="tl-i"><span class="tl-y">1983</span><p>В 1983 году подполковник армии США Уэйн Макдоннелл написал для военной разведки отчёт о методике Gateway. В нём описано, как с помощью звука, дыхания и концентрации переводить мозг в особый режим, когда полушария работают синхронно, а внутренний шум стихает. В этом состоянии человеку открываются возможности, недоступные в обычной жизни. Двадцать лет документ был засекречен.</p></div>
+<div class="tl-i"><span class="tl-y">1970-е · 1995</span><p>С начала семидесятых до 1995 года американская разведка вела программу «Звёздные врата», в которой изучали скрытые возможности сознания. Её документы тоже открыли только после закрытия.</p></div>
+<div class="tl-i"><span class="tl-y">1989 · 2003</span><p>У нас была своя история. С 1989 по 2003 год при Генеральном штабе работала войсковая часть 10003, которой руководил <span class="nw">генерал-лейтенант</span> Алексей Савин. Там изучали резервы человеческой психики и искали способы применить их в армии и разведке. Сам Савин позже рассказывал о работе части в интервью и книгах.</p></div>
+</div>
+<p class="rv">Сегодня тренировка внимания входит в официальную подготовку военных. Результаты поражают: в состоянии ментальной тишины когнитивные способности человека выходят за границы нормы. Скорость обработки информации, глубина анализа, точность прогнозов, всё возрастает в разы.</p>
+<p class="big rv long">Теперь подумайте, людей, для которых цена ошибки - жизнь, <mark class="hl">специально учат останавливать внутренний шум</mark>. А мы принимаем решения о бизнесе, деньгах, отношениях, здоровье и будущем своих детей с головой, в которой одновременно кричат двадцать голосов, из тревоги, страха и усталости. И потом удивляемся, почему результаты не те, деньги не те и отношения не те.</p>
+<p class="rv">Почему этому не учат в школе и на работе? Засекречивать эти знания специально не пришлось. Хватило того, что они написаны языком, который читают несколько тысяч специалистов, и разбросаны по военным архивам и научным журналам, куда обычный человек никогда не доберётся. А человек, у которого в голове тихо, думает сам, и управлять им гораздо сложнее.</p>
+<aside class="note">McDonnell W.M. (1983). Analysis and Assessment of Gateway Process. CIA, declassified 2003. · Jha A.P. et al. (2010). Emotion, 10(1), <span class="nw">54–64</span>.</aside>
+</section>
+<div class="hr" aria-hidden="true"></div>
+<section class="sec" id="f5" data-sec="Факт 05 из 07">
+<header class="fh rv"><div class="fh-n" aria-hidden="true">05</div><div class="fh-top"><span class="num">ФАКТ №05</span></div><h2>Внутри каждого есть <mark class="hl">навигатор, который знает точные ответы</mark>. Но его заглушили, и жизнь год за годом идёт не туда</h2></header>
+<p class="lede rv">Было такое, что внутри <span class="nw">что-то</span> сжималось: «не надо», «не туда», «не этот человек», а разум уговаривал: «Да ладно, нормально, не выдумывай»? А потом, через месяц, год или пять лет, становилось очевидно, что тело знало всё с самого начала, просто сигнал никто не услышал.</p>
+<p class="rv">Сколько раз так было? И главное, сколько это стоило: годы в чужих отношениях, деньги, вложенные не туда, возможности, мимо которых прошли, здоровье, которое можно было сохранить.</p>
+<p class="say rv">С вами всё в порядке, и совпадениями это тоже не назовёшь. Это нейробиология, которую которую десятилетиями держали под грифом.</p>
+<figure class="ev "><div class="ev-f"><img src="img/lm4-f5.webp" alt="40 000 нейронов сердца" width="1376" height="768" loading="lazy" decoding="async"><div class="scan"></div><i class="corner a"></i><i class="corner b"></i><i class="corner c"></i><i class="corner d"></i></div><figcaption class="ev-c"><span><span class="seg">Сердце ·</span> <span class="seg">Собственная нервная система</span></span><span class="tag">Armour · 1991</span></figcaption></figure>
+<p class="rv">В 1991 году канадский нейрокардиолог Эндрю Армор описал в сердце собственную нервную систему, около 40 000 нейронов и назвал её «маленьким мозгом в сердце». Сердце и мозг постоянно разговаривают друг с другом, и большая часть волокон блуждающего нерва несёт сигналы от тела к мозгу, а не наоборот.</p>
+<div class="hb rv"><div class="hb-c hb-img"><img src="img/lm2-hb.webp" alt="Сердце и мозг, соединённые блуждающим нервом" width="896" height="1152" loading="lazy"><svg viewBox="0 0 896 1152" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><radialGradient id="hbr"><stop offset="0" stop-color="#7DC4FF" stop-opacity=".75"/><stop offset="1" stop-color="#7DC4FF" stop-opacity="0"/></radialGradient><radialGradient id="hbh"><stop offset="0" stop-color="#ff7a5c" stop-opacity=".6"/><stop offset="1" stop-color="#ff7a5c" stop-opacity="0"/></radialGradient><filter id="hbf" x="-2" y="-2" width="5" height="5"><feGaussianBlur stdDeviation="5"/></filter></defs><ellipse class="hb-glow" cx="470" cy="190" rx="200" ry="140" fill="url(#hbr)"/><circle cx="440" cy="900" r="120" fill="url(#hbh)"><animate attributeName="r" values="90;150;90" dur="1.1s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;.2;.9" dur="1.1s" repeatCount="indefinite"/></circle><path id="nerv" d="M440 860 C440 790 446 740 452 700 C458 600 462 480 470 320" fill="none"/><g><circle r="14" fill="#ffb49e" opacity=".55" filter="url(#hbf)"/><circle r="5" fill="#fff4ef"/><animateMotion dur="1.8s" begin="0s" repeatCount="indefinite" rotate="auto"><mpath href="#nerv"/></animateMotion></g><g><circle r="14" fill="#ffb49e" opacity=".55" filter="url(#hbf)"/><circle r="5" fill="#fff4ef"/><animateMotion dur="1.8s" begin="0.3s" repeatCount="indefinite" rotate="auto"><mpath href="#nerv"/></animateMotion></g><g><circle r="14" fill="#ffb49e" opacity=".55" filter="url(#hbf)"/><circle r="5" fill="#fff4ef"/><animateMotion dur="1.8s" begin="0.6s" repeatCount="indefinite" rotate="auto"><mpath href="#nerv"/></animateMotion></g><g><circle r="14" fill="#ffb49e" opacity=".55" filter="url(#hbf)"/><circle r="5" fill="#fff4ef"/><animateMotion dur="1.8s" begin="0.9s" repeatCount="indefinite" rotate="auto"><mpath href="#nerv"/></animateMotion></g><g><circle r="14" fill="#ffb49e" opacity=".55" filter="url(#hbf)"/><circle r="5" fill="#fff4ef"/><animateMotion dur="1.8s" begin="1.2s" repeatCount="indefinite" rotate="auto"><mpath href="#nerv"/></animateMotion></g><g><circle r="14" fill="#ffb49e" opacity=".55" filter="url(#hbf)"/><circle r="5" fill="#fff4ef"/><animateMotion dur="1.8s" begin="1.5s" repeatCount="indefinite" rotate="auto"><mpath href="#nerv"/></animateMotion></g><g><circle r="14" fill="#7DC4FF" opacity=".55" filter="url(#hbf)"/><circle r="5" fill="#eaf6ff"/><animateMotion dur="2.6s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#nerv"/></animateMotion></g></svg><div class="hb-k" style="position:absolute;left:16px;right:16px;bottom:12px"><span class="seg">Сердце → мозг ·</span> <span class="seg">Армор, 1991</span></div></div><div class="hb-c"><svg viewBox="0 0 300 220" aria-hidden="true"><g><rect class="deck bad" x="18" y="30" width="54" height="78" rx="5" fill="#1E3F63" stroke="#7DC4FF" stroke-width="1.4"/><text x="45" y="78" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="20" font-weight="700" fill="#DCE6F0">A</text></g><g><rect class="deck bad" x="86" y="30" width="54" height="78" rx="5" fill="#1E3F63" stroke="#7DC4FF" stroke-width="1.4"/><text x="113" y="78" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="20" font-weight="700" fill="#DCE6F0">B</text></g><g><rect class="deck" x="154" y="30" width="54" height="78" rx="5" fill="#1E3F63" stroke="#7DC4FF" stroke-width="1.4"/><text x="181" y="78" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="20" font-weight="700" fill="#DCE6F0">C</text></g><g><rect class="deck" x="222" y="30" width="54" height="78" rx="5" fill="#1E3F63" stroke="#7DC4FF" stroke-width="1.4"/><text x="249" y="78" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="20" font-weight="700" fill="#DCE6F0">D</text></g><path d="M16 186h268" stroke="rgba(125,196,255,.25)"/><path d="M16 184c30 0 40-1 60-2s24-24 40-26 20 18 40 16 26-30 48-32 30 10 80 8" fill="none" stroke="#ff8a7a" stroke-width="2" stroke-dasharray="400" stroke-dashoffset="400"><animate attributeName="stroke-dashoffset" from="400" to="0" dur="3s" begin="indefinite" fill="freeze"/></path></svg><div class="hb-k"><span class="seg">Соматические маркеры ·</span> <span class="seg">Бешара, Дамасио, 1997</span></div></div></div>
+<p class="rv">Нейробиологи Антонио Дамасио и Антуан Бешара проверили, как это работает в решениях. Людям давали карточную игру с четырьмя колодами, две из которых были с подвохом: крупные выигрыши и ещё более крупные проигрыши. Датчики на коже показали, что ладони начинали потеть над опасными колодами задолго до того, как человек мог объяснить, что с ними не так, а сознание всё ещё тянулось к «выгодным» картам. Дамасио назвал такие сигналы соматическими маркерами.. Этот механизм до сих пор используют в подготовке оперативников: тело распознаёт правильный ответ за <span class="nw">6-10</span> секунд до сознания. Всё, что мы называем интуицией, чутьём и «нутром чувствую», оказалось вполне измеримой физиологией и работает безотказно.</p>
+<p class="rv">Но работает этот навигатор при одном условии: <mark class="hl">внутри должно быть тихо</mark>. Когда DMN орёт на всех частотах, тело посылает сигнал «не туда!», а сознание его не улавливает, как шёпот посреди <span class="nw">рок-концерта</span>.</p>
+<div class="panel" style="grid-template-columns:minmax(0,1fr)"><div class="panel-t"><p>Когда DMN замолкает и сердце входит в когерентность, происходит сдвиг на уровне биохимии:</p>
+<div class="stats" style="background:rgba(125,196,255,.2);border-color:rgba(125,196,255,.2)"><div class="stat" style="background:#10213a"><div class="stat-n" style="color:#7DC4FF">×2</div><div class="stat-l" style="color:rgba(201,215,230,.75)">DHEA, гормон молодости</div></div><div class="stat" style="background:#10213a"><div class="stat-n" style="color:#7DC4FF">−23%</div><div class="stat-l" style="color:rgba(201,215,230,.75)">кортизол, гормон стресса</div></div><div class="stat" style="background:#10213a"><div class="stat-n" style="color:#7DC4FF">+100 %</div><div class="stat-l" style="color:rgba(201,215,230,.75)">иммунная защита</div></div></div></div></div>
+<p class="rv">Тело в таком состоянии не просто «успокаивается», а запускает восстановление, замедляет старение и начинает подсказывать безошибочные решения, те самые, о которых потом говорят: «Не знаю как, просто знал(а), что это правильно.»</p>
+<p class="big rv">Внутри каждого, навигатор точнее любого коуча, психолога и <span class="nw">бизнес-консультанта</span>. Он работает бесплатно. Он не ошибается. Он был с рождения.</p>
+<p class="rv">Внутри каждого человека есть навигатор, точнее любого коуча, психолога и консультанта. Он бесплатный и был с вами с рождения. Но пока DMN громче, он молчит, и жизнь раз за разом сворачивает не туда.</p>
+<aside class="note">Armour J.A. (1991). · Bechara A., Damasio H., Tranel D., Damasio A.R. (1997). Science, 275, <span class="nw">1293–1295</span>. · McCraty R. et al. (1998). Integrative Physiological and Behavioral Science, 33(2), <span class="nw">151–170</span>.</aside>
+</section>
+<div class="hr" aria-hidden="true"></div>
+<section class="sec" id="f6" data-sec="Факт 06 из 07">
+<header class="fh rv"><div class="fh-n" aria-hidden="true">06</div><div class="fh-top"><span class="num">ФАКТ №06</span></div><h2>Вот что стоит за «ленью», «выгоранием» и «не могу себя заставить». И это крадёт не дни, а годы. Целые куски жизни.</h2><h3>Вот как выглядят <strong>украденные годы</strong>.</h3></header>
+<div class="lives"><div class="life rv"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="24" cy="18" r="7"/><path d="M12 52c0-10 5-17 12-17s12 7 12 17"/><rect x="38" y="26" width="20" height="14" rx="1.5"/><path d="M44 46h8M48 40v6"/><path d="M6 56h52"/></svg><p>Человек, который мог бы построить свой бизнес, пятнадцать лет сидит на нелюбимой работе. Каждое утро он говорит себе <span class="nw">«когда-нибудь</span> начну своё», а каждый вечер на это нет сил. Проходит год, пять, десять, пятнадцать, и мечта никуда не делась, она просто задохнулась под шумом.</p></div><div class="life rv"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="31" r="6"/><path d="M20 58c0-10 5-17 12-17s12 7 12 17"/><path d="M20 40l12 5 12-5v12l-12 5-12-5z"/><path d="M32 43v12"/></svg><p>Женщина, которая могла бы писать книги, дочитывает чужие. Могла бы путешествовать, а листает чужие фотографии. Могла бы светиться, а прячется, причём прячется от голоса внутри, который повторяет: «Не высовывайся, не получится, кто ты такая».</p></div><div class="life rv"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M46 10a10 10 0 1 0 8 16 8 8 0 0 1-8-16z"/><circle cx="24" cy="24" r="7"/><path d="M12 56c0-10 5-17 12-17s12 7 12 17"/><rect x="34" y="36" width="9" height="15" rx="1.5"/><path d="M6 58h52"/></svg><p>Мужчина, который мог бы зарабатывать втрое больше, седьмой год сидит на той же должности. Он понимает, что тело требует внимания, и в два часа ночи гуглит симптомы, вместо того чтобы <span class="nw">что-то</span> сделать.</p></div></div>
+<figure class="ev "><div class="ev-f"><img src="img/lm5-f6.webp" alt="Один и тот же человек за тем же столом стареет на снимках" width="1376" height="768" loading="lazy" decoding="async"><div class="scan"></div><i class="corner a"></i><i class="corner b"></i><i class="corner c"></i><i class="corner d"></i></div><figcaption class="ev-c"><span>Дело об украденных годах</span><span class="tag">Documentary</span></figcaption></figure>
+<p class="rv">И каждый день одно и то же: будильник, мысли раньше, чем открылись глаза, подъём через силу, работа, дорога домой. Хотел заняться своим проектом, телом, мечтой и не занялся. Лёг, полистал ленту, разозлился на себя, уснул, а утром всё сначала. Так проходит месяц, год, десять лет, жизнь.</p>
+<p class="rv">Это называют ленью, выгоранием, прокрастинацией, отсутствием дисциплины. На самом деле это обокраденный мозг. DMN генерирует тысячи микрорешений в день, и каждое «а вдруг?», «зря я так» или «что обо мне подумают» вычерпывает каплю из когнитивного бака. К обеду бак пуст, к вечеру он в минусе, и хотеть, решать и жить просто нечем.</p>
+<div class="tank" aria-hidden="true"><div class="tank-c"><div class="tank-b"><i data-h="92%" style="height:0"></i></div><div class="tank-l">Утро</div></div><div class="tank-c"><div class="tank-b"><i data-h="6%" style="height:0;--d:.3s"></i></div><div class="tank-l">Обед</div></div><div class="tank-c"><div class="tank-b"><i class="neg" data-h="100%" style="height:0;--d:.6s;opacity:.18"></i></div><div class="tank-l">Вечер</div></div></div>
+<div class="card rv"><div class="card-h"><div class="av"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v5M8 4l2 4M16 4l-2 4"/><path d="M6 13a6 6 0 1 0 12 0c0-2.5-1.6-4.6-3.8-5.5H9.8C7.6 8.4 6 10.5 6 13z"/><path d="M10 13h4M12 11v4"/></svg></div><div><b><span class="seg">Институт мозга человека ·</span> <span class="seg">Петербург</span></b></div></div><p>Почему же так трудно вырваться, даже когда всё понимаешь? Ответ нашла академик Наталья Петровна Бехтерева, которая почти сорок лет руководила Институтом мозга человека в Петербурге и одной из первых в мире стала изучать живой мозг изнутри, через вживлённые электроды.</p><p>В конце шестидесятых её группа открыла в мозге детектор ошибок. Он срабатывает каждый раз, когда вы отходите от привычного. Решили вставать раньше, поднять цену, начать своё дело, наконец сказать «нет», и внутри поднимается смутная тревога, будто вы делаете <span class="nw">что-то</span> неправильное. Детектору всё равно, в хорошую сторону вы свернули или в плохую: он сигналит о любом выходе за рамки знакомой программы и тянет обратно.</p><p>А потом Бехтерева описала то, что назвала устойчивым патологическим состоянием. Если человек долго живёт в тревоге, напряжении или болезни, мозг перестаёт считать это сбоем. Он перестраивается, начинает удерживать такое состояние как новую норму и охраняет его от перемен так же старательно, как <span class="nw">когда-то</span> охранял здоровье.</p></div>
+<p class="rv">Вот почему силой воли это не пробить: <mark class="hl">вы воюете с системой, которая уверена, что спасает вам жизнь</mark>. И страшнее всего то, что человек привыкает и решает, что это он сам такой: «такой характер», «видимо, не моё», «у других получается, а я не такой». Это ложь. DMN просто забрала ресурс раньше, чем вы успели потратить его на жизнь.</p>
+<div class="dawn rv"><p>А теперь представьте одно утро, когда внутри тихо. Вы открываете глаза, и голова ясная, причём не пустая, а именно ясная. Видно, что нужно сделать, и оно делается само, без борьбы и без «заставить себя». К вечеру вы всё ещё в ресурсе и всё ещё чувствуете себя собой.</p><p>Так буквально живут люди, у которых DMN под контролем.</p></div>
+</section>
+<section class="part" id="part3" data-sec="Часть III · Ключ"><div class="part-in"><div class="part-num" aria-hidden="true">III</div><div><div class="part-k">Часть III <b>Declassified</b></div><h2>Ключ</h2><ul class="part-list"><li><a href="#f7" title="Навык, после которого уже не бывает «как раньше» ни в деньгах, ни в теле, ни в голове"><span>Факт</span>07</a></li></ul></div></div><svg class="part-art" viewBox="0 0 400 240" aria-hidden="true"><g transform="translate(200 120)"><circle r="104" fill="none" stroke="rgba(125,196,255,.12)"/><path d="M26.9 -88.0 A92 92 0 1 1 -26.9 -88.0" fill="none" stroke="#7DC4FF" stroke-width="2.6" stroke-linecap="round" class="pa-r1"/><path d="M23.9 -65.8 A70 70 0 1 1 -23.9 -65.8" fill="none" stroke="#7DC4FF" stroke-width="2.6" stroke-linecap="round" class="pa-r2"/><path d="M20.3 -43.5 A48 48 0 1 1 -20.3 -43.5" fill="none" stroke="#7DC4FF" stroke-width="2" stroke-linecap="round" class="pa-r3"/><circle r="26" fill="url(#keyg)" class="pa-core"/><path d="M0 -12a7 7 0 0 1 4 12.7L6 12H-6l2-11.3A7 7 0 0 1 0 -12z" fill="#0a1422"/><g class="pa-rays"><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(0)"/><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(30)"/><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(60)"/><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(90)"/><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(120)"/><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(150)"/><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(180)"/><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(210)"/><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(240)"/><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(270)"/><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(300)"/><path d="M0 -112V-150" stroke="rgba(255,214,150,.5)" stroke-width="2" transform="rotate(330)"/></g></g><defs><radialGradient id="keyg"><stop offset="0" stop-color="#ffe2a8"/><stop offset="1" stop-color="#ff9a5c" stop-opacity=".2"/></radialGradient></defs></svg></section>
+<section class="sec" id="f7" data-sec="Факт 07 из 07">
+<header class="fh rv"><div class="fh-n" aria-hidden="true">07</div><div class="fh-top"><span class="num">ФАКТ №07</span></div><h2>Навык, после которого <mark class="hl">уже не бывает «как раньше»</mark> ни в деньгах, ни в теле, ни в голове</h2></header>
+<div class="chap">07.1</div>
+<p class="lede rv">Остановитесь на секунду и посмотрите, что открылось. Одна система в мозге, ОДНА отвечает сразу за всё это:</p>
+<ul class="sw"><li><i></i><span>нет сил просыпаться с радостью;</span></li><li><i></i><span>годами откладывается то, что давно пора начать;</span></li><li><i></i><span>принимаются решения, о которых потом жалеешь;</span></li><li><i></i><span>доход годами стоит на одной цифре;</span></li><li><i></i><span>тело болеет чаще, чем должно, а хронические симптомы держатся, несмотря на лечение;</span></li><li><i></i><span>старение идёт быстрее, чем могло бы;</span></li><li><i></i><span>нет вкуса к жизни, даже когда «всё нормально»;</span></li><li><i></i><span>самокритика не выключается ни на минуту;</span></li><li><i></i><span>цели не достигаются или достигаются с огромным трудом;</span></li><li><i></i><span>интуиция молчит, и жизнь сворачивает не туда;</span></li><li><i></i><span>счастье всё время откладывается на завтра.</span></li></ul>
+<div class="lever rv"><div class="tog" aria-hidden="true"></div><p>Один рубильник, и за ним другая жизнь.</p></div>
+<div class="chap">07.2</div>
+<p class="rv">И вот главная новость нейробиологии последних двадцати лет: <mark class="hl">этот рубильник можно переключить</mark>. Мозг взрослого человека физически меняет свою структуру, причём за недели, без лекарств, хирургии и многолетней терапии. Академическая наука долго в это не верила, пока не увидела на снимках.</p>
+<figure class="ev "><div class="ev-f"><img src="img/lm2-f7.webp" alt="Два снимка мозга до и после" width="1376" height="768" loading="lazy" decoding="async"><div class="scan"></div><i class="corner a"></i><i class="corner b"></i><i class="corner c"></i><i class="corner d"></i></div><figcaption class="ev-c"><span><span class="seg">До и после ·</span> <span class="seg">Восемь недель</span></span><span class="tag">Neuroimaging</span></figcaption></figure>
+<div class="tl">
+<div class="tl-i"><span class="tl-y">2005</span><p>В 2005 году Сара Лазар из Гарварда сравнила мозг людей, годами тренировавших внимание, с мозгом обычных людей. У практиков кора в областях, которые отвечают за внимание и ощущение собственного тела, оказалась толще, а у сорока- и пятидесятилетних выглядела как у двадцатилетних.</p></div>
+<div class="tl-i"><span class="tl-y">2010 · 2011</span><p>В 2010 и 2011 годах команда Бритты Хёльцель из Гарвардской медицинской школы взяла обычных людей с тревогой, бессонницей и усталостью, со всем тем, что вы узнаёте в себе, читая эту статью. Им дали восьминедельную программу ежедневной практики и сделали МРТ до и после. У тех, у кого уходил стресс, на снимках уменьшалась плотность серого вещества в миндалине, генераторе тревоги и страха. А в гиппокампе, который отвечает за память и обучение, серого вещества становилось больше. Мозг буквально перестроился за два месяца.</p></div>
+<div class="tl-i"><span class="tl-y">2011</span><p>В том же 2011 году Джадсон Брюэр из Йеля обнаружил, что у людей, умеющих управлять вниманием, DMN, тот самый кукловод, работает заметно тише.</p></div>
+<div class="tl-i"><span class="tl-y">UCSF</span><p>Помните теломеры? Исследователи Калифорнийского университета выяснили, что после интенсивной программы тренировки внимания теломераза, фермент, который восстанавливает концы хромосом, работала примерно на треть активнее, чем у тех, кто программу не проходил. Клетки получают шанс на восстановление, и дело тут в состоянии, кремы и процедуры ни при чём.</p></div>
+</div>
+<p class="rv">Ещё дальше идёт российский биофизик Пётр Гаряев. Он выдвинул гипотезу волнового генома: ДНК, по его мысли, откликается не только на химические сигналы, но и на информационные, в том числе на слова и образы. Официальная наука с этими выводами до сих пор спорит. Но если хотя бы часть этого верна, то внутренний монолог, который звучит в голове с утра до ночи, оказывается самой мощной программой вашей жизни, и вопрос только в том, кто её пишет.</p>
+<aside class="note">Lazar S.W. et al. (2005). NeuroReport, 16(17), <span class="nw">1893–1897</span>. · Hölzel B.K. et al. (2010). SCAN, 5(1), <span class="nw">11–17</span>. · Hölzel B.K. et al. (2011). Psychiatry Research, 191(1), <span class="nw">36–43</span>. · Brewer J.A. et al. (2011). PNAS, 108(50), <span class="nw">20254–20259</span>. · Jacobs T.L. et al. (2011). Psychoneuroendocrinology, 36(5), <span class="nw">664–681</span>.</aside>
+<div class="weeks rv"><div class="weeks-h">8 недель, чтобы мозг физически изменился</div><div class="wk"><span>миндалина уменьшается</span><div class="wk-b"><i style="--s:78%;--f:52%;--c:#B0281C"></i></div></div><div class="wk"><span>гиппокамп растёт</span><div class="wk-b"><i style="--s:40%;--f:74%"></i></div></div><div class="wk"><span>DMN затихает</span><div class="wk-b"><i style="--s:84%;--f:38%;--c:#1A3A5C"></i></div></div><div class="wk-scale"><span>Неделя 0</span><span>Неделя 8</span></div></div>
+<div class="chap">07.3</div>
+<h3 class="big rv" style="margin-top:10px">Что это означает на языке жизни</h3>
+<div class="lang rv"><div class="lang-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0" opacity=".5"/></svg><h4>Тревога.</h4><p>За ней стоит гиперактивная миндалина. Когда она успокаивается, вы впервые начинаете действовать из ясности, и страх перестаёт решать за вас.</p></div><div class="lang-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg><h4>Бессонница.</h4><p>Её держит DMN, которая не выключается. Когда она замолкает, утро становится другим, с энергией, о которой вы успели забыть.</p></div><div class="lang-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h12M6 22h12M7 2c0 5 5 6 5 10s-5 5-5 10M17 2c0 5-5 6-5 10s5 5 5 10"/></svg><h4>Прокрастинация.</h4><p>Это пустой бак. Он перестаёт опустошаться с самого утра, и проекты, отложенные на годы, сдвигаются с места за счёт ресурса, без насилия над собой.</p></div><div class="lang-c"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="17" height="10" rx="2"/><path d="M22 11v2M5.5 10v4"/></svg><h4>Усталость.</h4><p>Энергия, которая уходила на шум, освобождается, как скрытый источник питания, о котором вам никто не говорил.</p></div><div class="lang-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21.5l8.8-8.8a5 5 0 0 0 0-7.1z"/><path d="M3.5 12.5h4l2-3 3 6 2-3h6"/></svg><h4>Здоровье.</h4><p>Нервная система переходит из режима тревоги в режим восстановления, воспаление идёт на спад, иммунитет включается, и у тела наконец появляется ресурс чинить себя.</p></div><div class="lang-c"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.6-1-1.7-1.5-3-1.5-1.7 0-3 .9-3 2.2 0 3 6 1.6 6 4.6 0 1.3-1.3 2.2-3 2.2-1.4 0-2.6-.6-3.1-1.6M12 6v2M12 16v2"/></svg><h4>Деньги.</h4><p>Они приходят к тем, кто думает ясно, и обходят тех, кто думает много. Ясная голова видит возможности, которые тревожная пропускает, принимает решения, от которых тревожная бежит, и действует там, где тревожная откладывает.</p></div><div class="lang-c"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="8.5" r="2.5"/><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14.5 14.4c.6-.3 1.3-.4 2-.4 3 0 5.5 2.5 5.5 5.6"/></svg><h4>Отношения.</h4><p>Когда внутри тихо, человек наконец присутствует рядом с близкими: слышит, чувствует, не срывается и не додумывает за другого. Рядом с ним хорошо.</p></div><div class="lang-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><h4>Уверенность.</h4><p>Тихий ум видит и действует. То, что окружающие называют харизмой и внутренней силой, на деле означает тихую голову и ресурс.</p></div></div>
+<p class="big rv long">Один навык, и с той стороны другая жизнь, та, которая всегда чувствовалась <span class="nw">где-то</span> рядом, но дотянуться до неё не получалось. Между ней и вами всё это время стоял шум. Уберите его, и дверь откроется сама: она никогда не была заперта, просто за шумом её было не видно.</p>
+</section>
+<section class="sec" id="test" data-sec="Проверьте себя">
+<header class="fh rv"><div class="fh-top"><span class="num">Проверьте себя</span><span class="st">Self-assessment</span></div></header>
+<div class="test"><div class="test-h"><p><span class="nw">Экспресс-диагностика</span> DMN. Отметьте, что из этого про вас:</p></div><ul class="test-l"><li><label><input type="checkbox"><span>просыпаюсь, и мысли уже бегут;</span></label></li><li><label><input type="checkbox"><span>не могу уснуть, голова не замолкает;</span></label></li><li><label><input type="checkbox"><span>«улетаю» из разговоров и важных моментов;</span></label></li><li><label><input type="checkbox"><span>к вечеру нет сил, хотя ничего тяжёлого не было;</span></label></li><li><label><input type="checkbox"><span>тревога без причины, фоном;</span></label></li><li><label><input type="checkbox"><span>откладываю важное, потом злюсь на себя;</span></label></li><li><label><input type="checkbox"><span>забываю, теряю вещи, рассеянность стала нормой;</span></label></li><li><label><input type="checkbox"><span>перебираю прошлое, репетирую будущее;</span></label></li><li><label><input type="checkbox"><span>решения даются тяжело, даже мелкие.</span></label></li></ul>
+<div class="test-m"><div class="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="meter-n">Совпадений: <b>0</b> из 9</div><div class="res"><p data-min="2">2 и больше совпадений: DMN в активной фазе, и энергия уходит на шум вместо жизни.</p><p data-min="4">4 и больше: система работает на полную мощность вхолостую, и вы каждый день теряете здоровье, деньги, время и отношения.</p><p data-min="6">6 и больше: вы читаете это вовремя.</p></div></div></div>
+</section>
+<div class="hr" aria-hidden="true"></div>
+<section class="sec" id="dalshe" data-sec="Что дальше">
+<header class="fh rv"><h2>Что дальше</h2></header>
+<p class="lede rv">За этой статьёй стоят десять лет изучения нейробиологии, работы мозга и гормональных механизмов, связи тела и сознания, а ещё военные протоколы управления вниманием. Всё это мы собрали в одну систему, которую может пройти каждый: без ретритов, без випассаны и без совета «просто медитируй, и всё наладится».</p>
+<p class="rv">Нужно <span class="nw">пятнадцать-двадцать</span> минут в день, 28 дней, у себя дома. Результат получается физический: именно такие изменения в мозге исследователи видят на МРТ после восьми недель ежедневной практики.</p>
+<p class="big rv">Те, кто прошёл, говорят одно и то же: «Почему мне никто не рассказал об этом раньше?»</p>
+<div class="prod v2 k2 rv"><div class="prod-in">
+<h3>Протокол остановки ума</h3><div class="prod-sub k2-meta">28 дней · <span class="nw">15–20</span> минут в день · Вечный доступ</div>
+<ul class="k2-list"><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5.5 3.5-5.5 3.5z"/></svg><span>28 ежедневных видеопрактик по <span class="nw">15–20</span> минут: минимум времени и максимум результата</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s4 1 6 1c2 0 6 2 6-1s-4-3-6 1"/></svg><span>Бонусные материалы и практики</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg><span>Бонусный эфир о том, как переключать гормоны и улучшать качество жизни</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M9 7h6"/></svg><span>Научный мануал на 34 страницы</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19h18"/><path d="M4 15l4-4 4 3 7-8"/><circle cx="19" cy="6" r="1.2"/></svg><span>Трекер прогресса на 28 дней</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="8.5" r="2.5"/><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14.5 14.4c.6-.3 1.3-.4 2-.4 3 0 5.5 2.5 5.5 5.6"/></svg><span>Закрытый чат участников</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>Вечный доступ</span></li></ul>
+</div></div>
+<p class="k2-stat rv">500 человек уже прошли протокол, и 92% отмечают результат в первую же неделю.</p>
+<p class="rv">Такой системы больше нигде нет. В ней соединены рассекреченные военные протоколы, нейробиология, работа с гормонами и десять лет практики, и всё это умещается в пятнадцать минут в день.</p>
+<p class="rv">Психолог, коуч или приложение для медитации такого не дадут, потому что они работают с содержанием мыслей. Протокол работает с самим механизмом, который стоит за всеми мыслями.</p>
+<p class="rv">Те, кто берёт его сейчас, получают то, чего большинство людей не получит никогда, просто потому что так и не узнает, что это существует.</p>
+<div class="fin2 k2-fin rv"><div class="cta"><a class="btn big" href="/protokol2/" target="_blank" rel="noopener">Начать Протокол <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><p class="disc">Программа не относится к медицинским или психологическим услугам и не заменяет консультацию специалиста. При тревожном расстройстве, депрессии и хронической бессоннице нужен врач.</p></div>
+</section>
+</main></div></div>
+<footer class="site-foot"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px"><div><div style="font-family:Georgia,serif;font-size:1.3rem;font-weight:700;color:#1C2534;line-height:1.15">Архитектура сознания</div><div style="font-family:-apple-system,sans-serif;font-size:.78rem;color:#55606C;margin-top:3px">Мозг · тело · достаток</div></div><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><a href="https://t.me/+oSuGhJQlsr4zYmQy" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#2E6090;color:#FFFFFF;text-decoration:none;padding:10px 17px;border-radius:10px;font-weight:700;font-size:.8rem;font-family:-apple-system,sans-serif"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M21.3 4.3 2.9 11.4c-1 .38-.98 1.78.03 2.13l4.55 1.56 1.76 5.4c.28.85 1.37 1.03 1.9.28l2.5-3.55 4.55 3.36c.7.52 1.7.13 1.87-.72L22.9 5.7c.2-1-.68-1.82-1.6-1.4Z"/></svg> Телеграм</a><a href="https://instagram.com/thebodymindcode" target="_blank" rel="noopener" aria-label="Instagram" style="width:40px;height:40px;border-radius:11px;background:rgba(0,0,0,.05);display:inline-flex;align-items:center;justify-content:center;color:#3A4658"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5.4" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.1" stroke="currentColor" stroke-width="1.7"/><circle cx="17.4" cy="6.6" r="1.25" fill="currentColor"/></svg></a><a href="https://www.youtube.com/@thebodymindcode" target="_blank" rel="noopener" aria-label="YouTube" style="width:40px;height:40px;border-radius:11px;background:rgba(0,0,0,.05);display:inline-flex;align-items:center;justify-content:center;color:#3A4658"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><rect x="2.4" y="5.6" width="19.2" height="12.8" rx="4.2" stroke="currentColor" stroke-width="1.7"/><path d="M10.4 9.3 15.2 12l-4.8 2.7V9.3Z" fill="currentColor"/></svg></a><a href="https://www.tiktok.com/@thebodymindcode" target="_blank" rel="noopener" aria-label="TikTok" style="width:40px;height:40px;border-radius:11px;background:rgba(0,0,0,.05);display:inline-flex;align-items:center;justify-content:center;color:#3A4658"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M13.7 3.2v9.9a3.6 3.6 0 1 1-3.05-3.56" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.7 5.6c.85 1.9 2.55 3.15 4.75 3.35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://www.threads.com/@daryarostovtseva" target="_blank" rel="noopener" aria-label="Threads" style="width:40px;height:40px;border-radius:11px;background:rgba(0,0,0,.05);display:inline-flex;align-items:center;justify-content:center;color:#3A4658"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 11.4c-.13-.06-.27-.12-.4-.17-.24-4.35-2.6-6.84-6.58-6.86-2.4-.02-4.4 1-5.63 2.86l1.78 1.22c.9-1.37 2.32-1.66 3.4-1.66h.03c1.36 0 2.38.4 3.05 1.18.48.57.8 1.35.96 2.34-1.2-.2-2.5-.26-3.9-.18-3.9.22-6.4 2.5-6.24 5.66.09 1.6.88 2.98 2.24 3.87 1.15.76 2.63 1.13 4.17 1.05 2.03-.11 3.63-.89 4.74-2.3.84-1.08 1.37-2.48 1.6-4.24.96.58 1.67 1.34 2.06 2.26.66 1.56.7 4.12-1.39 6.2l1.65 1.53c1.42-1.42 2.94-3.86 2.16-7.06-.55-2.24-2.03-3.68-3.93-4.63Zm-5.24 6.9c-1.7.1-3.47-.67-3.56-2.32-.06-1.22.87-2.58 3.67-2.74.32-.02.64-.03.94-.03.94 0 1.82.09 2.62.27-.3 3.73-2.05 4.46-3.67 4.55Z"/></svg></a></div></div><div style="margin-top:18px;font-family:-apple-system,sans-serif;font-size:12px;color:#55606C;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><span>© 2026. Все права защищены. ИП Ростовцева Дарья Валерьевна · ИНН 241103415641</span><a href="https://t.me/TheBodyMindCode_support" target="_blank" rel="noopener" style="color:#55606C;text-decoration:none">Поддержка · @TheBodyMindCode_support</a></div><div class="tbmc-doc" style="margin:18px auto 0;padding-top:14px;max-width:1280px;border-top:1px solid currentColor;border-color:color-mix(in srgb,currentColor 18%,transparent);display:flex;flex-wrap:wrap;gap:18px;justify-content:center;font-size:13px;opacity:.72"><a href="/oferta/" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Публичная оферта</a><a href="/politika/" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Политика конфиденциальности</a></div><div class="tbmc-ip" style="text-align:center;font-size:13px;line-height:1.5;opacity:.75;padding:12px 16px 20px;color:inherit">Федотов Алексей Юрьевич · ИНН&nbsp;505602398769</div></footer>
+<script>(function(){
+ var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var $ = function(s, r){ return (r || document).querySelector(s); };
+ var $$ = function(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+ // печати и снятие грифа на первом экране
+ setTimeout(function(){ $$('.hero .rd').forEach(function(el, i){ setTimeout(function(){ el.classList.add('off'); }, 250 + i * 260); }); }, 350);
+ setTimeout(function(){ $$('.hero .stamp').forEach(function(s){ s.classList.add('hit'); }); }, 1500);
+
+ // появление блоков
+ var once = function(el){
+  el.classList.add('in');
+  $$('.rd', el).forEach(function(r, i){ setTimeout(function(){ r.classList.add('off'); }, 200 + i * 240); });
+  $$('.stamp', el).forEach(function(s){ setTimeout(function(){ s.classList.add('hit'); }, 500); });
+  if (el.hasAttribute('data-dial')) dial(el);
+  $$('[data-to]', el).forEach(count);
+  if (el.classList.contains('chain')) chain(el);
+  if (el.classList.contains('sw')) sw(el);
+  if (el.classList.contains('telo')) telo(el);
+  if (el.classList.contains('tank')) $$('.tank-b i', el).forEach(function(i){ i.style.height = i.getAttribute('data-h'); });
+  if (el.classList.contains('hb')) hb(el);
+ };
+ var watch = $$('.hl, .rv, .ev, [data-dial], .chain, .sw, .telo, .tank, .weeks, .lever, .tl-i, .memo, .hb, .stats');
+ if ('IntersectionObserver' in window && !reduce) {
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { once(e.target); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -12% 0px', threshold:.08});
+  watch.forEach(function(el){ io.observe(el); });
+ } else watch.forEach(once);
+
+ // счётчики
+ function count(el){
+  if (el._d) return; el._d = 1;
+  var to = parseFloat(el.getAttribute('data-to').replace(',', '.')), pre = el.getAttribute('data-pre') || '', suf = el.getAttribute('data-suf') || '', dec = (el.getAttribute('data-to').split(/[.,]/)[1] || '').length;
+  if (reduce) return;
+  var t0 = null, dur = 1600;
+  function f(ts){ if (!t0) t0 = ts; var k = Math.min(1, (ts - t0) / dur); k = 1 - Math.pow(1 - k, 3);
+   el.textContent = pre + (to * k).toFixed(dec).replace('.', ',') + suf; if (k < 1) requestAnimationFrame(f); }
+  el.textContent = pre + (0).toFixed(dec).replace('.', ',') + suf; requestAnimationFrame(f);
+ }
+ // круг 46,9%
+ function dial(el){ var c = $('.fl', el), L = 2 * Math.PI * 86; c.style.strokeDasharray = (L * .469) + ' ' + L; }
+ // цепочка тревоги загорается звено за звеном
+ function chain(el){ var cs = $$('.c', el); if (reduce) return; var i = 0;
+  (function step(){ cs.forEach(function(c, j){ c.classList.toggle('hot', j === i); }); i++; if (i <= cs.length) setTimeout(step, 520); else cs.forEach(function(c){ c.classList.remove('hot'); }); })(); }
+ // одиннадцать пунктов отмечаются, потом рубильник
+ function sw(el){ var li = $$('li', el); li.forEach(function(l, i){ setTimeout(function(){ l.classList.add('on'); }, reduce ? 0 : i * 170); }); }
+ // теломеры укорачиваются
+ function telo(el){ $$('.cap', el).forEach(function(c){ var w = c.getAttribute('data-w'); c.setAttribute('width', w); if (c.hasAttribute('data-x')) c.setAttribute('x', c.getAttribute('data-x')); }); }
+ // колоды: опасные краснеют раньше, чем объяснит сознание
+ function hb(el){ var an = el.querySelector('path animate'); if (an && an.beginElement) an.beginElement(); $$('.deck.bad', el).forEach(function(d, i){ setTimeout(function(){ d.style.fill = '#B0281C'; d.style.transform = 'translateY(-6px)'; }, 900 + i * 300); }); }
+
+ // верхняя полоса: прогресс, текущий факт, оглавление
+ var bar = $('.bar'), prog = $('.prog'), now = $('.bar-now'), secs = $$('[data-sec]'), links = $$('.toc a');
+ function onScroll(){
+  var h = document.documentElement, max = h.scrollHeight - innerHeight, y = scrollY;
+  prog.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
+  bar.classList.toggle('on', y > innerHeight * .6);
+  var cur = null; secs.forEach(function(s){ if (s.getBoundingClientRect().top < innerHeight * .35) cur = s; });
+  var id = cur ? cur.id : '';
+  if (cur && now.getAttribute('data-id') !== id) { now.textContent = cur.getAttribute('data-sec'); now.setAttribute('data-id', id); }
+  var seen = true;
+  links.forEach(function(a){ var on = a.getAttribute('href') === '#' + id; a.classList.toggle('on', on); if (on) seen = false; a.classList.toggle('done', seen && !!id); });
+ }
+ addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+ var dr = $('.drawer');
+ function tog(o){ dr.classList.toggle('open', o); document.body.style.overflow = o ? 'hidden' : ''; }
+ $$('[data-toc]').forEach(function(b){ b.addEventListener('click', function(){ tog(true); }); });
+ dr.addEventListener('click', function(e){ if (e.target === dr || e.target.closest('.drawer-x') || e.target.closest('a')) tog(false); });
+ addEventListener('keydown', function(e){ if (e.key === 'Escape') tog(false); });
+
+ // самодиагностика
+ var box = $('.test');
+ if (box) {
+  var ins = $$('input', box), mi = $$('.meter i', box), n = $('.meter-n b', box), rs = $$('.res p', box);
+  var upd = function(){ var k = ins.filter(function(i){ return i.checked; }).length; n.textContent = k;
+   mi.forEach(function(m, i){ m.className = i < k ? ('on' + (k >= 6 ? ' r' : k >= 4 ? ' w' : '')) : ''; });
+   rs.forEach(function(r){ var t = +r.getAttribute('data-min'); r.classList.toggle('on', k >= t); r.classList.toggle('r', k >= 6 && t === 6); }); };
+  ins.forEach(function(i){ i.addEventListener('change', upd); }); upd();
+ }
+})();
+</script>
+</body>
+</html>
